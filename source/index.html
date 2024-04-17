@@ -4,12 +4,45 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
+    <title>LIFETOUR</title>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
-  <body class="page-body">
-    <header data-test="header">
 
+  <body class="page-body">
+    <header class="header" data-test="header">
+      <button class="header__button" type="button">
+        <span class="header__burger-icon"></span>
+        <span class="visually-hidden">
+          Меню
+        </span>
+      </button>
+
+      <img class="header__logo" src="/" height="" width="" alt="Lifetour, организация путешествий.">
+
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#tours">Туры</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#training">Обучение</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#reviews">Отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#gallery">Фотографии</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#contacts">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a class="header__tel-link" href="tel:+78000000000">8 800 000-00-00</a>
     </header>
 
     <main>
