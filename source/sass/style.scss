@@ -2,3 +2,14 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+
+
+
+//global
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/variables.scss";
+@import "./global/visually-hidden.scss";
+
+//block
+@import "./block/page-body.scss";

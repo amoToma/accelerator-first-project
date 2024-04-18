@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: contain;
+  vertical-align: bottom;
+  height: auto;
+  max-width: 100%;
+}
+
+body {
+  min-width: 320px;
+}
+
+html {
+  height: 100%;
+}

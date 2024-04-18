@@ -1,0 +1,9 @@
+.page-body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-montserrat;
+  color: $text-color;
+}
