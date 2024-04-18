@@ -10,6 +10,10 @@
 @import "./global/global.scss";
 @import "./global/variables.scss";
 @import "./global/visually-hidden.scss";
+@import "./global/mixins.scss";
 
 //block
 @import "./block/page-body.scss";
+@import "./block/container.scss";
+@import "./block/header.scss";
+@import "./block/navigation.scss";

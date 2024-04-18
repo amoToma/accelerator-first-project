@@ -1,0 +1,9 @@
+.header {
+  background-color: $brand-color;
+  color: $text-color-light;
+}
+
+.header__tel-link {
+  @include link;
+  color: inherit;
+}
