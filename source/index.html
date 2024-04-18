@@ -52,7 +52,7 @@
 
       <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Популярные туры</h2>
-        <div class="hero__swiper swiper">
+        <div class="hero__swiper swiper swiper--hero">
           <ul class=" hero__list swiper-wrapper">
             <li class="hero__item swiper-slide">
               <h3>
@@ -101,8 +101,158 @@
         </div>
       </section>
 
-      <section class="tours" data-test="tours">
+      <section class="tours" data-test="tours" id="tours">
+        <h2 class="tours__title">Ближайшие туры</h2>
+        <span class="tours__background" aria-hidden="true">Ближайшие туры</span>
 
+        <button class="tours__button swiper-button swiper-button--prev">
+          <span class="visually-hidden">Предыдущий слайд</span>
+        </button>
+        <button class="tours__button swiper-button swiper-button--next">
+          <span class="visually-hidden">Следующий слайд</span>
+        </button>
+
+        <div class="tours__swiper swiper swiper--tours">
+          <ul class="tours__list swiper-wrapper">
+            <li class="tours__item tours-card swiper-slide">
+              <picture>
+                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Эльбрус.">
+              </picture>
+
+              <div class="tours-card__info-container">
+                <ul class="tours-card__nameplate-list">
+                  <li class="tours-card__nameplate tours__nameplate--location">
+                    Кавказ
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--days">
+                    4 дня
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--nights">
+                    3 ночи
+                  </li>
+                </ul>
+                <h3 class="tours-card__title">
+                  Путешествие вокруг Эльбруса
+                </h3>
+                <ul class="tours-card__info-list">
+                  <li class="tours-card__info-item">
+                    Сложность <span class="visually-hidden">4 звезды из 5</span>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Даты набора: <b>12.06–19.06</b>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Группа: <b>до 15 чел.</b>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tours__item tours-card swiper-slide">
+              <picture>
+                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на подножье Белухи.">
+              </picture>
+
+              <div class="tours-card__info-container">
+                <ul class="tours-card__nameplate-list">
+                  <li class="tours-card__nameplate tours__nameplate--location">
+                    Алтай
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--days">
+                    14 дней
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--nights">
+                    13 ночей
+                  </li>
+                </ul>
+                <h3 class="tours-card__title">
+                  Путь к подножию Белухи
+                </h3>
+                <ul class="tours-card__info-list">
+                  <li class="tours-card__info-item">
+                    Сложность <span class="visually-hidden">3 звезды из 5</span>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Даты набора: <b>14.06–23.06</b>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Группа: <b>до 25 чел.</b>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tours__item tours-card swiper-slide">
+              <picture>
+                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Фишт">
+              </picture>
+
+              <div class="tours-card__info-container">
+                <ul class="tours-card__nameplate-list">
+                  <li class="tours-card__nameplate tours__nameplate--location">
+                    Адыгея
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--days">
+                    7 дней
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--nights">
+                    6 ночей
+                  </li>
+                </ul>
+                <h3 class="tours-card__title">
+                  Через Фишт к Чёрному морю и обратно
+                </h3>
+                <ul class="tours-card__info-list">
+                  <li class="tours-card__info-item">
+                    Сложность <span class="visually-hidden">4 звезды из 5</span>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Даты набора: <b>15.07–19.07</b>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Группа: <b>до 22 чел.</b>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li class="tours__item tours-card swiper-slide">
+              <picture>
+                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Манарага">
+              </picture>
+
+              <div class="tours-card__info-container">
+                <ul class="tours-card__nameplate-list">
+                  <li class="tours-card__nameplate tours__nameplate--location">
+                    Урал
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--days">
+                    9 дней
+                  </li>
+                  <li class="tours-card__nameplate tours__nameplate--nights">
+                    10 ночей
+                  </li>
+                </ul>
+                <h3 class="tours-card__title">
+                  Восхождение Манарага
+                </h3>
+                <ul class="tours-card__info-list">
+                  <li class="tours-card__info-item">
+                    Сложность <span class="visually-hidden">5 звезды из 5</span>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Даты набора: <b>12.07–19.07</b>
+                  </li>
+                  <li class="tours-card__info-item">
+                    Группа: <b>до 7 чел.</b>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <a class="tours__link" href="/">Показать все туры</a>
       </section>
 
     </main>
