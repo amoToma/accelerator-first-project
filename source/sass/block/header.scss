@@ -23,6 +23,23 @@
     min-width: 157px;
     padding-top: 3px;
   }
+
+  &:hover {
+    color: #80b3e0;
+  }
+
+  &:focus {
+    outline: none;
+    color: $text-color-base;
+  }
+
+  &:active {
+    color: $text-color-accent;
+  }
+
+  --disabled {
+    color: $text-color-neutral;
+  }
 }
 
 .header__logo {
