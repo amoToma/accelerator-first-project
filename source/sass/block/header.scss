@@ -1,9 +1,75 @@
 .header {
   background-color: $brand-color;
   color: $text-color-light;
+  position: relative;
 }
 
 .header__tel-link {
   @include link;
   color: inherit;
+  font-weight: 600;
+  line-height: 14px;
+  text-align: end;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    min-width: 157px;
+  }
+}
+
+.header__logo {
+  width: 142px;
+  height: 42px;
+  object-fit: fill;
+  margin-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-right: auto;
+  }
+}
+
+.header__navigation {
+  position: absolute;
+  display: block;
+  width: 100%;
+  background-color: $brand-color;
+  left: 0;
+  top: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.header__info-container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    width: 410px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }

@@ -1,0 +1,21 @@
+.burger {
+  border: none;
+  background: transparent;
+  width: 26px;
+  height: 26px;
+  padding: 3px 0;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.burger__icon {
+  display: block;
+  background: $background-baze;
+  width: 26px;
+  height: 19px;
+  mask-image: url("/__spritemap#sprite-menu-view");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+}

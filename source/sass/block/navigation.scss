@@ -1,8 +1,47 @@
 .navigation__list {
   @include list;
+
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 15px 50px;
+  line-height: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 22px;
+  letter-spacing: 0.56px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 30px 45px 70px;
+    gap: 26px;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    max-width: 830px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    gap: 20px;
+    justify-content: center;
+  }
 }
 
 .navigation__link {
   @include link;
   color: inherit;
+
+
+  @media (min-width: $desktop-width) {
+    padding: 3px 5px;
+  }
 }
