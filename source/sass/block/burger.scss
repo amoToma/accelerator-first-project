@@ -1,21 +1,19 @@
 .burger {
   border: none;
-  background: transparent;
+  background: $background-baze;
   width: 26px;
   height: 26px;
-  padding: 3px 0;
+  padding: 0;
+  mask-image: url("/__spritemap#sprite-menu-close-view");
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  mask-size: 26px 26px;
 
   @media (min-width: $desktop-width) {
     display: none;
   }
 }
 
-.burger__icon {
-  display: block;
-  background: $background-baze;
-  width: 26px;
-  height: 19px;
-  mask-image: url("/__spritemap#sprite-menu-view");
-  mask-repeat: no-repeat;
-  mask-position: center center;
+.burger--open {
+  mask-image: url("/__spritemap#sprite-menu-open-view");
 }

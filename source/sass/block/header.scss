@@ -36,6 +36,15 @@
 }
 
 .header__navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    position: static;
+  }
+}
+
+.header__navigation--open {
   position: absolute;
   display: block;
   width: 100%;
