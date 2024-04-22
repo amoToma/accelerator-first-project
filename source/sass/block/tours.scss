@@ -1,0 +1,28 @@
+.tours__container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  //display: grid;
+  // flex-direction: column;
+  //gap: 25px;
+  //min-width: 0;
+}
+
+.tours__header-container {
+  padding-top: 16px;
+  padding-bottom: 17px;
+  margin-bottom: 25px;
+}
+
+.tours__button {
+  display: none;
+}
+
+.tours__list {
+  @include list;
+}
+
+.tours__swiper {
+  margin-bottom: 25px;
+}
+
+

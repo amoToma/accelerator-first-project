@@ -65,7 +65,7 @@
         <h2 class="visually-hidden">Популярные туры</h2>
         <div class="hero__swiper swiper swiper--hero">
           <ul class="hero__list swiper-wrapper">
-            <li class="hero__item hero-slide hero-slide--1 swiper-slide">
+            <li class="hero__item hero-slide swiper-slide">
               <div class="hero-slide__container container">
                 <h3>
                   Захватывающие вершины Кавказа
@@ -79,10 +79,20 @@
                 <p class="hero-slide__nameplate hero-slide__nameplate--moon">6 дней/5 ночей</p>
                 <p class="hero-slide__nameplate hero-slide__nameplate--level">Высокая сложность</p>
               </div>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-slide-1-desktop@1x.webp 1x, img/hero-slide-1-desktop@2x.webp 2x" width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-slide-1-tablet@1x.webp 1x, img/hero-slide-1-tablet@2x.webp 2x" width="768" height="1034">
+                <source type="image/webp" srcset="img/hero-slide-1-mobile@1x.webp 1x, img/hero-slide-1-mobile@2x.webp 2x" width="320" height="568">
+
+                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero-slide-1-desktop@1x.jpg 1x, img/hero-slide-1-desktop@2x.jpg 2x" width="1440" height="800">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero-slide-1-tablet@1x.jpg 1x, img/hero-slide-1-tablet@2x.jpg 2x" width="768" height="1034">
+                <img class="hero-slide__image" src="img/hero-slide-1-mobile@1x.jpg" srcset="img/hero-slide-1-mobile@2x.jpg 2x" width="320" height="568" alt="Вид на горы Эльбруса">
+              </picture>
             </li>
 
-            <li class="hero__item hero-slide hero-slide--2 swiper-slide">
-              <div class="hero-slide__container container">
+            <li class="hero__item hero-slide swiper-slide">
+              <div class="hero-slide__container hero-slide__container--polaroid container">
                 <h3>
                   Невероятная природа Камчатки
                 </h3>
@@ -95,9 +105,19 @@
                 <p class="hero-slide__nameplate hero-slide__nameplate--moon">9 дней/10 ночей</p>
                 <p class="hero-slide__nameplate hero-slide__nameplate--level">Средняя сложность</p>
               </div>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-slide-2-desktop@1x.webp 1x, img/hero-slide-2-desktop@2x.webp 2x" width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-slide-2-tablet@1x.webp 1x, img/hero-slide-2-tablet@2x.webp 2x" width="768" height="1034">
+                <source type="image/webp" srcset="img/hero-slide-2-mobile@1x.webp 1x, img/hero-slide-2-mobile@2x.webp 2x" width="320" height="568">
+
+                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero-slide-2-desktop@1x.jpg 1x, img/hero-slide-2-desktop@2x.jpg 2x" width="1440" height="800">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero-slide-2-tablet@1x.jpg 1x, img/hero-slide-2-tablet@2x.jpg 2x" width="768" height="1034">
+                <img class="hero-slide__image" src="img/hero-slide-2-mobile@1x.jpg" srcset="img/hero-slide-2-mobile@2x.jpg 2x" width="320" height="568" alt="Пейзаж Алтайского Края.">
+              </picture>
             </li>
 
-            <li class="hero__item hero-slide hero-slide--3 swiper-slide">
+            <li class="hero__item hero-slide swiper-slide">
               <div class="hero-slide__container container">
                 <h3>
                   Магические пейзажи Алтайского Края
@@ -111,165 +131,198 @@
                 <p class="hero-slide__nameplate hero-slide__nameplate--moon">8 дней/7 ночей</p>
                 <p class="hero-slide__nameplate hero-slide__nameplate--level">Лёгкая сложность</p>
               </div>
+
+              <picture>
+                <source type="image/webp" media="(min-width: 1440px)" srcset="img/hero-slide-3-desktop@1x.webp 1x, img/hero-slide-3-desktop@2x.webp 2x" width="1440" height="800">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/hero-slide-3-tablet@1x.webp 1x, img/hero-slide-3-tablet@2x.webp 2x" width="768" height="1034">
+                <source type="image/webp" srcset="img/hero-slide-3-mobile@1x.webp 1x, img/hero-slide-3-mobile@2x.webp 2x" width="320" height="568">
+
+                <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/hero-slide-3-desktop@1x.jpg 1x, img/hero-slide-3-desktop@2x.jpg 2x" width="1440" height="800">
+                <source type="image/jpeg" media="(min-width: 768px)" srcset="img/hero-slide-3-tablet@1x.jpg 1x, img/hero-slide-3-tablet@2x.jpg 2x" width="768" height="1034">
+                <img class="hero-slide__image hero-slide__image--3" src="img/hero-slide-3-mobile@1x.jpg" srcset="img/hero-slide-3-mobile@2x.jpg 2x" width="320" height="568" alt="Вид на горы Эльбруса">
+              </picture>
             </li>
           </ul>
 
-          <div class="hero__pagination swiper-pagination"></div>
+          <div class="hero__pagination swiper-pagination">
+
+          </div>
         </div>
       </section>
 
       <section class="tours" data-test="tours" id="tours">
-        <h2 class="tours__title title">Ближайшие туры</h2>
-        <span class="tours__title-background title-background" aria-hidden="true">Ближайшие туры</span>
+        <div class="tours__container container">
+          <div class="tours__header-container">
+            <h2 class="tours__title title">Ближайшие туры</h2>
+            <!-- <span class="tours__title-background title-background" aria-hidden="true">Ближайшие туры</span> -->
 
-        <button class="tours__button swiper-button swiper-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="tours__button swiper-button swiper-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
+            <button class="tours__button swiper-button swiper-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="tours__button swiper-button swiper-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
 
-        <div class="tours__swiper swiper swiper--tours">
-          <ul class="tours__list swiper-wrapper">
-            <li class="tours__item tours-card swiper-slide">
-              <picture>
-                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Эльбрус.">
-              </picture>
+          <div class="tours__swiper swiper swiper--tours">
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item tours-card swiper-slide">
+                <picture>
+                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Эльбрус.">
+                </picture>
 
-              <div class="tours-card__info-container">
-                <ul class="tours-card__nameplate-list">
-                  <li class="tours-card__nameplate tours-card__nameplate--location">
-                    Кавказ
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--days">
-                    4 дня
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--nights">
-                    3 ночи
-                  </li>
-                </ul>
-                <h3 class="tours-card__title">
-                  Путешествие вокруг Эльбруса
-                </h3>
-                <ul class="tours-card__info-list">
-                  <li class="tours-card__info-item">
-                    Сложность <span class="visually-hidden">4 звезды из 5</span>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Даты набора: <b>12.06–19.06</b>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Группа: <b>до 15 чел.</b>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                <div class="tours-card__info-container">
+                  <div class="tours-card__nameplate-list">
+                    <span class="tours-card__nameplate tours-card__nameplate--location">
+                      Кавказ
+                    </span>
+                    <div class="tours-card__day-container">
+                      <span class="tours-card__nameplate tours-card__nameplate--days">
+                        4 дня
+                      </span>
+                      <span class="tours-card__nameplate tours-card__nameplate--nights">
+                        3 ночи
+                      </span>
+                    </div>
+                  </div>
+                  <h3 class="tours-card__title">
+                    Путешествие вокруг Эльбруса
+                  </h3>
+                  <ul class="tours-card__info-list">
+                    <li class="tours-card__info-item tours-card__info-item--level">
+                      Сложность <span class="visually-hidden">4 звезды из 5</span>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--date">
+                      <span class="tours-card__info-subtitle">Даты набора:</span>
+                      <b>12.06–19.06</b>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--group">
+                      <span class="tours-card__info-subtitle">Группа:</span>
+                      <b>до 15 чел.</b>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="tours__item tours-card swiper-slide">
-              <picture>
-                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на подножье Белухи.">
-              </picture>
+              <li class="tours__item tours-card swiper-slide">
+                <picture>
+                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на подножье Белухи.">
+                </picture>
 
-              <div class="tours-card__info-container">
-                <ul class="tours-card__nameplate-list">
-                  <li class="tours-card__nameplate tours-card__nameplate--location">
-                    Алтай
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--days">
-                    14 дней
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--nights">
-                    13 ночей
-                  </li>
-                </ul>
-                <h3 class="tours-card__title">
-                  Путь к подножию Белухи
-                </h3>
-                <ul class="tours-card__info-list">
-                  <li class="tours-card__info-item">
-                    Сложность <span class="visually-hidden">3 звезды из 5</span>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Даты набора: <b>14.06–23.06</b>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Группа: <b>до 25 чел.</b>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                <div class="tours-card__info-container">
+                  <div class="tours-card__nameplate-list">
+                    <span class="tours-card__nameplate tours-card__nameplate--location">
+                      Алтай
+                    </span>
+                    <div class="tours-card__day-container">
+                      <span class="tours-card__nameplate tours-card__nameplate--days">
+                        14 дней
+                      </span>
+                      <span class="tours-card__nameplate tours-card__nameplate--nights">
+                        13 ночей
+                      </span>
+                    </div>
+                  </div>
+                  <h3 class="tours-card__title">
+                    Путь к подножию Белухи
+                  </h3>
+                  <ul class="tours-card__info-list">
+                    <li class="tours-card__info-item tours-card__info-item--level">
+                      Сложность <span class="visually-hidden">3 звезды из 5</span>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--date">
+                      <span class="tours-card__info-subtitle">Даты набора:</span>
+                      <b>14.06–23.06</b>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--group">
+                      <span class="tours-card__info-subtitle">Группа:</span>
+                      <b>до 25 чел.</b>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="tours__item tours-card swiper-slide">
-              <picture>
-                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Фишт">
-              </picture>
+              <li class="tours__item tours-card swiper-slide">
+                <picture>
+                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Фишт">
+                </picture>
 
-              <div class="tours-card__info-container">
-                <ul class="tours-card__nameplate-list">
-                  <li class="tours-card__nameplate tours-card__nameplate--location">
-                    Адыгея
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--days">
-                    7 дней
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--nights">
-                    6 ночей
-                  </li>
-                </ul>
-                <h3 class="tours-card__title">
-                  Через Фишт к Чёрному морю и обратно
-                </h3>
-                <ul class="tours-card__info-list">
-                  <li class="tours-card__info-item">
-                    Сложность <span class="visually-hidden">4 звезды из 5</span>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Даты набора: <b>15.07–19.07</b>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Группа: <b>до 22 чел.</b>
-                  </li>
-                </ul>
-              </div>
-            </li>
+                <div class="tours-card__info-container">
+                  <div class="tours-card__nameplate-list">
+                    <span class="tours-card__nameplate tours-card__nameplate--location">
+                      Адыгея
+                    </span>
+                    <div class="tours-card__day-container">
+                      <span class="tours-card__nameplate tours-card__nameplate--days">
+                        7 дней
+                      </span>
+                      <span class="tours-card__nameplate tours-card__nameplate--nights">
+                        6 ночей
+                      </span>
+                    </div>
+                  </div>
+                  <h3 class="tours-card__title">
+                    Через Фишт к Чёрному морю и обратно
+                  </h3>
+                  <ul class="tours-card__info-list">
+                    <li class="tours-card__info-item tours-card__info-item--level">
+                      Сложность <span class="visually-hidden">4 звезды из 5</span>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--date">
+                      <span class="tours-card__info-subtitle">Даты набора:</span>
+                      <b>15.07–19.07</b>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--group">
+                      <span class="tours-card__info-subtitle">Группа:</span>
+                      <b>до 22 чел.</b>
+                    </li>
+                  </ul>
+                </div>
+              </li>
 
-            <li class="tours__item tours-card swiper-slide">
-              <picture>
-                <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Манарага">
-              </picture>
+              <li class="tours__item tours-card swiper-slide">
+                <picture>
+                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Манарага">
+                </picture>
 
-              <div class="tours-card__info-container">
-                <ul class="tours-card__nameplate-list">
-                  <li class="tours-card__nameplate tours-card__nameplate--location">
-                    Урал
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--days">
-                    9 дней
-                  </li>
-                  <li class="tours-card__nameplate tours-card__nameplate--nights">
-                    10 ночей
-                  </li>
-                </ul>
-                <h3 class="tours-card__title">
-                  Восхождение Манарага
-                </h3>
-                <ul class="tours-card__info-list">
-                  <li class="tours-card__info-item">
-                    Сложность <span class="visually-hidden">5 звезды из 5</span>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Даты набора: <b>12.07–19.07</b>
-                  </li>
-                  <li class="tours-card__info-item">
-                    Группа: <b>до 7 чел.</b>
-                  </li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+                <div class="tours-card__info-container">
+                  <div class="tours-card__nameplate-list">
+                    <span class="tours-card__nameplate tours-card__nameplate--location">
+                      Урал
+                    </span>
+                    <div class="tours-card__day-container">
+                      <span class="tours-card__nameplate tours-card__nameplate--days">
+                        9 дней
+                      </span>
+                      <span class="tours-card__nameplate tours-card__nameplate--nights">
+                        10 ночей
+                      </span>
+                    </div>
+                  </div>
+                  <h3 class="tours-card__title">
+                    Восхождение Манарага
+                  </h3>
+                  <ul class="tours-card__info-list">
+                    <li class="tours-card__info-item tours-card__info-item--level">
+                      Сложность <span class="visually-hidden">5 звезды из 5</span>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--date">
+                      <span class="tours-card__info-subtitle">Даты набора:</span>
+                      <b>12.07–19.07</b>
+                    </li>
+                    <li class="tours-card__info-item tours-card__info-item--group">
+                      <span class="tours-card__info-subtitle">Группа:</span>
+                      <b>до 7 чел.</b>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+
+          <a class="tours__link" href="/">Показать все туры</a>
         </div>
-
-        <a class="tours__link" href="/">Показать все туры</a>
       </section>
 
       <section class="training" data-test="training" id="training">
@@ -689,7 +742,7 @@
       </picture>
 
 
-        <ul class="footer-nav__list">
+        <ul class="footer-nav">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#tours">Туры</a>
           </li>

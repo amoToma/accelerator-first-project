@@ -1,0 +1,126 @@
+.tours-card {
+  min-height: 416px;
+  background-color: #6a91b7;
+  color: $text-color-light;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.tours-card__info-container {
+
+  display: flex;
+  flex-direction: column;
+  min-height: 356px;
+  justify-content: flex-end;
+}
+
+.tours-card__nameplate-list {
+  @include list;
+
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.tours-card__info-list {
+  @include list;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  //gap: 8px;
+}
+
+.tours-card__title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  margin: 0;
+  padding-bottom: 16px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.tours-card__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: $background-baze;
+  opacity: 0.2;
+  height: 1px;
+  width: 80px;
+  left: 0;
+  bottom: 0;
+}
+
+.tours-card__nameplate {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  padding: 4px 0 4px 32px;
+
+  &--location {
+    background-color: $brand-color;
+    display: block;
+    padding: 8px 12px 8px 34px;
+
+  }
+
+  &--days {
+
+  }
+}
+
+.tours-card__info-item {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+
+  &:last-child {
+    padding-right: 0;
+  }
+
+  &--level {
+    min-width: 84px;
+    padding-bottom: 20px;
+  }
+
+  &--date {
+    width: max-content;
+  }
+
+  &--group {
+    width: max-content;
+    align-self: flex-end;
+  }
+}
+
+.tours-card__info-item b {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  //text-align: end;
+}
+
+.tours-card__photo {
+  display: block;
+  position: absolute;
+  width: 290px;
+  height: 416px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.tours-card__day-container {
+  display: flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+}

@@ -3,8 +3,6 @@
 
 @import "vendor/normalize";
 
-
-
 //global
 @import "./global/fonts.scss";
 @import "./global/global.scss";
@@ -20,4 +18,10 @@
 @import "./block/burger.scss";
 @import "./block/hero.scss";
 @import "./block/hero-slide.scss";
-@import "./element/button.scss";
+@import "./block/hero-slide.scss";
+@import "./block/button.scss";
+@import "./block/swiper-pagination.scss";
+@import "./block/title.scss";
+@import "./block/tours.scss";
+@import "./block/tours-card.scss";
+

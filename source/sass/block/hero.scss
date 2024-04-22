@@ -1,4 +1,7 @@
 .hero__list {
   @include list;
 
+  background-color: $brand-color;
 }
+
+
