@@ -29,7 +29,7 @@ export const heroSwiper = new Swiper('.swiper--hero', {
 
 export const toursSwiper = new Swiper('.swiper--tours', {
   direction: 'horizontal',
-  loop: true,
+  loop: false,
   modules: [ Navigation ],
 
   navigation: {

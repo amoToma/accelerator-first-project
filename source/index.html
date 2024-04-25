@@ -153,22 +153,28 @@
       <section class="tours" data-test="tours" id="tours">
         <div class="tours__container container">
           <div class="tours__header-container">
-            <h2 class="tours__title title">Ближайшие туры</h2>
+            <h2 class="tours__title title" data-title-duble="Ближайшие туры">Ближайшие туры</h2>
             <!-- <span class="tours__title-background title-background" aria-hidden="true">Ближайшие туры</span> -->
-
-            <button class="tours__button swiper-button swiper-button--prev" type="button">
-              <span class="visually-hidden">Предыдущий слайд</span>
-            </button>
-            <button class="tours__button swiper-button swiper-button--next" type="button">
-              <span class="visually-hidden">Следующий слайд</span>
-            </button>
+            <div class="tours__button-container">
+              <button class="tours__button swiper-button swiper-button--prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="tours__button swiper-button swiper-button--next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
+            </div>
           </div>
 
           <div class="tours__swiper swiper swiper--tours">
             <ul class="tours__list swiper-wrapper">
               <li class="tours__item tours-card swiper-slide">
                 <picture>
-                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Эльбрус.">
+                  <source type="image/webp" srcset="img/tours-slide1-desktop@1x.webp 1x, img/tours-slide1-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" srcset="img/tours-slide1-tablet@1x.webp 1x, img/tours-slide1-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/tours-slide1-mobile@1x.webp 1x, img/tours-slide1-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide1-desktop@1x.jpg 1x, img/tours-slide1-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide1-tablet@1x.jpg 1x, img/tours-slide1-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours-card__photo" src="img/tours-slide1-mobile@1x.jpg" srcset="img/tours-slide1-mobile@2x.jpg 2x" width="290" height="416" alt="Вид на Эльбрус.">
                 </picture>
 
                 <div class="tours-card__info-container">
@@ -189,8 +195,8 @@
                     Путешествие вокруг Эльбруса
                   </h3>
                   <ul class="tours-card__info-list">
-                    <li class="tours-card__info-item tours-card__info-item--level">
-                      Сложность <span class="visually-hidden">4 звезды из 5</span>
+                    <li class="tours-card__info-item tours-card__info-item--level tours-card__stars tours-card__stars--4-stars">
+                      Сложность: <span class="visually-hidden">4 звезды из 5</span>
                     </li>
                     <li class="tours-card__info-item tours-card__info-item--date">
                       <span class="tours-card__info-subtitle">Даты набора:</span>
@@ -206,7 +212,12 @@
 
               <li class="tours__item tours-card swiper-slide">
                 <picture>
-                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на подножье Белухи.">
+                  <source type="image/webp" srcset="img/tours-slide2-desktop@1x.webp 1x, img/tours-slide2-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" srcset="img/tours-slide2-tablet@1x.webp 1x, img/tours-slide2-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/tours-slide2-mobile@1x.webp 1x, img/tours-slide2-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide2-desktop@1x.jpg 1x, img/tours-slide2-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide2-tablet@1x.jpg 1x, img/tours-slide2-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours-card__photo" src="img/tours-slide2-mobile@1x.jpg" srcset="img/tours-slide2-mobile@2x.jpg 2x" width="290" height="416" alt="Вид на подножье Белухи.">
                 </picture>
 
                 <div class="tours-card__info-container">
@@ -227,8 +238,8 @@
                     Путь к подножию Белухи
                   </h3>
                   <ul class="tours-card__info-list">
-                    <li class="tours-card__info-item tours-card__info-item--level">
-                      Сложность <span class="visually-hidden">3 звезды из 5</span>
+                    <li class="tours-card__info-item tours-card__info-item--level tours-card__stars tours-card__stars--3-stars">
+                      Сложность: <span class="visually-hidden">3 звезды из 5</span>
                     </li>
                     <li class="tours-card__info-item tours-card__info-item--date">
                       <span class="tours-card__info-subtitle">Даты набора:</span>
@@ -244,7 +255,12 @@
 
               <li class="tours__item tours-card swiper-slide">
                 <picture>
-                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Фишт">
+                  <source type="image/webp" srcset="img/tours-slide3-desktop@1x.webp 1x, img/tours-slide3-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" srcset="img/tours-slide3-tablet@1x.webp 1x, img/tours-slide3-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/tours-slide3-mobile@1x.webp 1x, img/tours-slide3-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide3-desktop@1x.jpg 1x, img/tours-slide3-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide3-tablet@1x.jpg 1x, img/tours-slide3-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours-card__photo" src="img/tours-slide2-mobile@1x.jpg" srcset="img/tours-slide2-mobile@2x.jpg 2x" width="290" height="416" alt="Вид на Фишт">
                 </picture>
 
                 <div class="tours-card__info-container">
@@ -265,8 +281,8 @@
                     Через Фишт к Чёрному морю и обратно
                   </h3>
                   <ul class="tours-card__info-list">
-                    <li class="tours-card__info-item tours-card__info-item--level">
-                      Сложность <span class="visually-hidden">4 звезды из 5</span>
+                    <li class="tours-card__info-item tours-card__info-item--level tours-card__stars tours-card__stars--4-stars">
+                      Сложность: <span class="visually-hidden">4 звезды из 5</span>
                     </li>
                     <li class="tours-card__info-item tours-card__info-item--date">
                       <span class="tours-card__info-subtitle">Даты набора:</span>
@@ -282,7 +298,12 @@
 
               <li class="tours__item tours-card swiper-slide">
                 <picture>
-                  <img class="tours-card__photo" src="/" width="" height="" alt="Вид на Манарага">
+                  <source type="image/webp" srcset="img/tours-slide4-desktop@1x.webp 1x, img/tours-slide4-desktop@2x.webp 2x" width="380" height="416">
+                  <source type="image/webp" srcset="img/tours-slide4-tablet@1x.webp 1x, img/tours-slide4-tablet@2x.webp 2x" width="330" height="416">
+                  <source type="image/webp" srcset="img/tours-slide4-mobile@1x.webp 1x, img/tours-slide4-mobile@2x.webp 2x" width="290" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide4-desktop@1x.jpg 1x, img/tours-slide4-desktop@2x.jpg 2x" width="380" height="416">
+                  <source type="image/jpg" srcset="img/tours-slide4-tablet@1x.jpg 1x, img/tours-slide4-tablet@2x.jpg 2x" width="330" height="416">
+                  <img class="tours-card__photo" src="img/tours-slide4-mobile@1x.jpg" srcset="img/tours-slide4-mobile@2x.jpg 2x" width="290" height="416" alt="Вид на Манарага">
                 </picture>
 
                 <div class="tours-card__info-container">
@@ -303,8 +324,8 @@
                     Восхождение Манарага
                   </h3>
                   <ul class="tours-card__info-list">
-                    <li class="tours-card__info-item tours-card__info-item--level">
-                      Сложность <span class="visually-hidden">5 звезды из 5</span>
+                    <li class="tours-card__info-item tours-card__info-item--level tours-card__stars tours-card__stars--5-stars">
+                      Сложность: <span class="visually-hidden">5 звезды из 5</span>
                     </li>
                     <li class="tours-card__info-item tours-card__info-item--date">
                       <span class="tours-card__info-subtitle">Даты набора:</span>
@@ -320,8 +341,9 @@
             </ul>
           </div>
 
-
-          <a class="tours__link" href="/">Показать все туры</a>
+          <div class="tours__link-container">
+            <a class="tours__link" href="/">Показать все туры</a>
+          </div>
         </div>
       </section>
 

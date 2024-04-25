@@ -1,0 +1,63 @@
+.swiper-button {
+  width: 37px;
+  height: 35px;
+  background-color: $brand-color;
+  border: none;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 14px;
+    height: 9px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    background: $background-baze;
+  }
+
+  &:hover {
+    background-color: $background-baze;
+    border: 1px solid $border-accent;
+  }
+
+  &:hover::after {
+    background: $background-accent;
+  }
+
+  &:focus {
+    background-color: $background-baze;
+    outline: none;
+  }
+
+  &:focus::after {
+    background: $background-accent;
+  }
+
+  &:active {
+    background: $background-accent;
+  }
+
+  &:active::after {
+    background: $background-baze;
+  }
+
+  &:disabled {
+    background-color: $background-neutral;
+    pointer-events: none;
+  }
+}
+
+.swiper-button--prev::after {
+  mask-image: url("/__spritemap#sprite-button-prev-view");
+  mask-repeat: no-repeat;
+  mask-size: 14px 9px;
+}
+
+.swiper-button--next::after {
+  mask-image: url("/__spritemap#sprite-button-next-view");
+  mask-repeat: no-repeat;
+  mask-size: 14px 9px;
+}
