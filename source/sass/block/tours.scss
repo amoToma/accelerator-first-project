@@ -44,23 +44,28 @@
   padding-top: 3px;
 }
 
-.tours__button-container {
-  display: flex;
-  gap: 4px;
+// .tours__button-container {
+//   display: none;
 
-  @media (min-width: $desktop-width) {
-    align-items: flex-end;
-    align-self: flex-start;
-  }
-}
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//     display: flex;
+//     gap: 4px;
+//   }
 
-.tours__button {
-  display: none;
+//   @media (min-width: $desktop-width) {
+//     align-items: flex-end;
+//     align-self: flex-start;
+//   }
+// }
 
-  @media (min-width: $tablet-width) {
-    display: block;
-  }
-}
+// .tours__button {
+//   display: none;
+
+//   @media (min-width: $tablet-width) {
+//     display: block;
+//   }
+// }
 
 .tours__list {
   @include list;

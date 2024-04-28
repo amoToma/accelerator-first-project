@@ -33,8 +33,8 @@ export const toursSwiper = new Swiper('.swiper--tours', {
   modules: [ Navigation ],
 
   navigation: {
-    prevEl: '.swiper-button--prev',
-    nextEl: '.swiper-button--next',
+    prevEl: '.swiper-buttons__tours-prev',
+    nextEl: '.swiper-buttons__tours-next',
   },
 
   breakpoints: {
@@ -57,4 +57,32 @@ export const toursSwiper = new Swiper('.swiper--tours', {
 });
 
 
+export const instructorsSwiper = new Swiper('.swiper--instructors', {
+  direction: 'horizontal',
+  loop: false,
+  modules: [ Navigation ],
 
+  navigation: {
+    prevEl: '.swiper-buttons__instructors-prev',
+    nextEl: '.swiper-buttons__instructors-next',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      initialSlide: 2,
+    },
+
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      initialSlide: 0,
+    },
+
+    1366: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    }
+  }
+});

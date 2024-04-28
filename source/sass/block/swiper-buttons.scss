@@ -1,0 +1,14 @@
+.swiper-buttons {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    display: flex;
+    gap: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    align-items: flex-end;
+    align-self: flex-start;
+  }
+}

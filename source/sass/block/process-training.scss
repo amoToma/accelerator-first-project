@@ -1,0 +1,76 @@
+.process-training__list {
+  @include list;
+
+  padding-left: 29px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.process-training__item {
+  padding-left: 34px;
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  background-position: left top;
+  position: relative;
+
+  &:not(:last-child) {
+    padding-bottom: 25px;
+  }
+
+  &--map {
+    background-image: url("/__spritemap#sprite-icon-map-view");
+  }
+
+  &--equipment {
+    background-image: url("/__spritemap#sprite-icon-equipment-view");
+  }
+
+  &--eco {
+    background-image: url("/__spritemap#sprite-icon-eco-view");
+  }
+
+  &--obstacles {
+    background-image: url("/__spritemap#sprite-icon-mountain-view");
+  }
+}
+
+.process-training__item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: $brand-color;
+  border-radius: 50%;
+  transform: translate(0, -50%);
+  left: -29px;
+  top: calc(50% - 12.5px);
+}
+
+.process-training__item:last-child:after {
+  top: 50%;
+}
+
+.process-training__item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: $brand-color;
+  left: -23px;
+  top: 0;
+}
+
+.process-training__item:first-child::before {
+  top: calc(50% - 12.5px);
+}
+
+.process-training__item:last-child::before {
+  top: auto;
+  bottom: 50%;
+}

@@ -1,0 +1,40 @@
+.instructors-card {
+  background-color: $background-baze;
+  border: solid 1px rgba(2, 102, 193, 0.1);
+  padding: 15px;
+  //height: 100%;
+}
+
+.instructors-card__photo {
+  width: 100%;
+  height: 200px;
+
+  @media (min-width: $tablet-width) {
+
+  }
+}
+
+.instructors-card__header {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.instructors-card__header h4 {
+  line-height: 16px;
+  margin: 0;
+  width: min-content;
+}
+
+.instructors-card p {
+  font-size: 12px;
+  line-height: 16px;
+  width: 100%;
+}
+
+.instructors-card__header a {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: solid 1px rgba(45, 56, 63, 0.3);
+}
