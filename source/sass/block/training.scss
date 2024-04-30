@@ -1,13 +1,23 @@
 .training__container {
   padding-top: 20px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+.training__instructors {
+  margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 56px;
   }
 }
 
 .training__title {
-  padding-bottom: 17px;
+  //padding-bottom: 17px;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
@@ -22,15 +32,15 @@
 }
 
 .training__intro-container {
-  padding-top: 16px;
+  //padding-top: 16px;
   padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 20px;
+    //padding-top: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 19px;
+    //padding-top: 19px;
     padding-bottom: 56px;
   }
 }

@@ -1,0 +1,28 @@
+.advantages {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+  }
+}
+
+.advantages__title {
+  //display: inline-block;
+  text-align: center;
+}
+
+.advantages__list {
+  @include list;
+}

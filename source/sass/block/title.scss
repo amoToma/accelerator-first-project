@@ -4,15 +4,28 @@
   margin: 0;
   font-weight: 800;
   position: relative;
+  padding-top: 18px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
+    padding-bottom: 0;
+  }
+
+  &--about,
+  &--reviews {
+    @media (min-width: $desktop-width) {
+      padding-top: 45px;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -25,7 +38,7 @@
   font-size: 26px;
   line-height: 26px;
   font-weight: 800;
-  top: -15px;
+  bottom: 26px;
   min-width: max-content;
   max-width: 290px;
 
@@ -34,6 +47,8 @@
     line-height: 40px;
     min-width: max-content;
     max-width: 580px;
+    bottom: 10px;
+    //top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -44,5 +59,11 @@
     left: 0;
     bottom: -3px;
     top: auto;
+  }
+}
+
+.title--about::after {
+  @media (min-width: $desktop-width) {
+    bottom: 20px;
   }
 }

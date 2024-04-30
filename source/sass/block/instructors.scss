@@ -9,10 +9,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    align-items: flex-end;
   }
 }
 
 .instructors__list {
   @include list;
+}
+
+.instructors__title {
+  padding: 0;
 }

@@ -1,17 +1,27 @@
 .instructors-card {
   background-color: $background-baze;
   border: solid 1px rgba(2, 102, 193, 0.1);
-  padding: 15px;
-  //height: 100%;
+  padding: 14px;
+  min-height: 356px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 388px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 356px;
+  }
+}
+
+.instructors-card__photo-container {
+  width: 100%;
+  min-height: 200px;
+  margin-bottom: 15px;
 }
 
 .instructors-card__photo {
-  width: 100%;
-  height: 200px;
-
-  @media (min-width: $tablet-width) {
-
-  }
+  max-width: 100%;
+  vertical-align: bottom;
 }
 
 .instructors-card__header {

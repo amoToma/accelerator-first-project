@@ -5,10 +5,11 @@
     display: block;
     display: flex;
     gap: 4px;
+    align-items: flex-end;
   }
 
   @media (min-width: $desktop-width) {
     align-items: flex-end;
-    align-self: flex-start;
+    padding-bottom: 4px;
   }
 }
