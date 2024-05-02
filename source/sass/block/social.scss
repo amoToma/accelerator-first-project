@@ -1,0 +1,25 @@
+.social {
+  @include list;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    gap: 15px;
+  }
+}
+
+.social__link {
+  @include link;
+
+  width: 32px;
+  height: 30px;
+  border: solid 1px rgba(45, 56, 63, 0.3);
+
+  @media (min-width: $desktop-width) {
+    width: 30px;
+    height: 30px;
+  }
+}

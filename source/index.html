@@ -668,84 +668,99 @@
       </section>
 
       <section class="advantages" data-test="adv">
-        <h2 class="advantages__title title" data-title-duble="Преимущества">
+        <h2 class="advantages__title title title--advantages" data-title-duble="Преимущества">
           Преимущества
         </h2>
 
         <div class="advantages__swiper swiper swiper--advantages">
           <ul class="advantages__list swiper-wrapper">
             <li class="advantages__item advantages-card swiper-slide">
-              <h3>
-                Безопасность
-              </h3>
-              <p>
-                Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
-              </p>
+              <div class="advantages-card__content advantages-card__content--security">
+                <h3>
+                  Безопасность
+                </h3>
+                <p>
+                  Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+                </p>
+              </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
-              <h3>
-                Экспертиза и знания
-              </h3>
-              <p>
-                Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
-              </p>
+              <div class="advantages-card__content advantages-card__content--info">
+                <h3>
+                  Экспертиза и знания
+                </h3>
+                <p>
+                  Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
+                </p>
+              </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
-              <h3>
-                Оборудование и снаряжение
-              </h3>
-              <p>
-                Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
-              </p>
+              <div class="advantages-card__content advantages-card__content--outfit">
+                <h3>
+                  Оборудование и снаряжение
+                </h3>
+                <p>
+                  Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
+                </p>
+              </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
-              <h3>
-                Индивидуальные маршруты
-              </h3>
-              <p>
-                Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
-              </p>
+              <div class="advantages-card__content advantages-card__content--rout">
+                <h3>
+                  Индивидуальные маршруты
+                </h3>
+                <p>
+                  Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
+                </p>
+              </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
-              <h3>
-                Бережное отношение к природе
-              </h3>
-              <p>
-                Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
-              </p>
+              <div class="advantages-card__content advantages-card__content--eco">
+                <h3>
+                  Бережное отношение к природе
+                </h3>
+                <p>
+                  Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
+                </p>
+              </div>
             </li>
           </ul>
         </div>
 
-        <div class="advantages__button-container swiper-buttons">
-          <button class="advantages__button swiper-button swiper-button--prev" type="button">
+        <div class="advantages__button-container swiper-buttons swiper-buttons--advantages">
+          <button class="swiper-buttons__advantages-prev swiper-button swiper-button--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
           </button>
-          <button class="advantages__button swiper-button swiper-button--next" type="button">
+          <button class="swiper-buttons__advantages-next swiper-button swiper-button--next" type="button">
             <span class="visually-hidden">Следующий слайд</span>
           </button>
         </div>
       </section>
 
       <section class="gallery" data-test="gallery" id="gallery">
-        <h2 class="gallery__title title">
-          Фотогалерея
-        </h2>
-        <span class="gallery__title-background title-background" aria-hidden="true">Фотогалерея</span>
-        <p>
-          Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
-        </p>
+        <div class="gallery__header-container container">
+          <div class="gallery__header-info-container">
+            <h2 class="gallery__title title" data-title-duble="Фотогалерея">
+              Фотогалерея
+            </h2>
+            <p>
+              Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+            </p>
+          </div>
 
-        <button class="gallery__button swiper-button swiper-button--prev" type="button">
-          <span class="visually-hidden">Предыдущий слайд</span>
-        </button>
-        <button class="gallery__button swiper-button swiper-button--next" type="button">
-          <span class="visually-hidden">Следующий слайд</span>
-        </button>
+          <div class="gallery__button-container swiper-buttons">
+            <button class="swiper-buttons__gallery-prev swiper-button swiper-button--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+            </button>
+            <button class="swiper-buttons__gallery-next swiper-button swiper-button--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+            </button>
+          </div>
+        </div>
 
         <div class="gallery__swiper swiper swiper--gallery">
           <ul class="gallery__list swiper-wrapper">
@@ -814,50 +829,65 @@
 
     <footer class="footer" data-test="footer">
       <section class="footer__contacts contacts" id="contacts">
-        <h2 class="contacts__title title">
-          Контакты
-        </h2>
-        <span class="contacts__title-background title-background" aria-hidden="true">Контакты</span>
-        <p>
-          Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
-        </p>
+        <div class="contacts__container">
+          <div class="contacts__info-container">
+            <h2 class="contacts__title title title--contacts" data-title-duble="Контакты">
+              Контакты
+            </h2>
+            <div class="contacts__intro-container">
+              <p>
+                Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.
+              </p>
+            </div>
 
-        <ul class="contacts__list">
-          <li class="contacts__item contacts__item--phone">
-            <h3 class="contacts__item-title">
-              Телефон
-            </h3>
-            <a class="contacts__item-info" href="tel:+79837454545">+7 983 745-45-45</a>
-          </li>
+            <ul class="contacts__list">
+              <li class="contacts__item contacts__item--phone">
+                <h3 class="contacts__item-title">
+                  Телефон
+                </h3>
+                <a class="contacts__item-info" href="tel:+79837454545">+7 983 745-45-45</a>
+              </li>
 
-          <li class="contacts__item contacts__item--email">
-            <h3 class="contacts__item-title">
-              Email
-            </h3>
-            <a class="contacts__item-info" href="mailto:info@lifetour.com">info@lifetour.com</a>
-          </li>
+              <li class="contacts__item contacts__item--email">
+                <h3 class="contacts__item-title">
+                  Email
+                </h3>
+                <a class="contacts__item-info" href="mailto:info@lifetour.com">info@lifetour.com</a>
+              </li>
 
-          <li class="contacts__item contacts__item--adress">
-            <h3 class="contacts__item-title">
-              Адрес
-            </h3>
-            <p class="contacts__item-info">
-              г. Москва, пр-т Мира, д. 14, офис 101
-            </p>
-          </li>
-        </ul>
+              <li class="contacts__item contacts__item--adress">
+                <h3 class="contacts__item-title">
+                  Адрес
+                </h3>
+                <p class="contacts__item-info">
+                  г. Москва, пр-т Мира, д. 14, офис 101
+                </p>
+              </li>
+            </ul>
+          </div>
 
-        <picture>
-          <img class="contacts__map" src="/" width="" height="" alt="Расположение офиса на карте.">
-        </picture>
+          <div class="contacts__map-container">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x" width="600" height="324">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x" width="768" height="340">
+              <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x" width="320" height="343">
+              <source type="image/png" media="(min-width: 1440px)" srcset="img/map-desktop@1x.png 1x, img/map-desktop@2x.png 2x" width="600" height="324">
+              <source type="image/png" media="(min-width: 768px)" srcset="img/map-tablet@1x.png 1x, img/map-tablet@2x.png 2x" width="768" height="340">
+              <img class="contacts__map" src="img/map-mobile@1x.png" srcset="img/map-mobile@2x.png 2x" width="320" height="343" alt="Расположение офиса на карте.">
+            </picture>
+          </div>
+        </div>
       </section>
 
-      <picture>
-        <img class="footer__logo" src="/" height="" width="" alt="Lifetour, организация путешествий в горы.">
-      </picture>
+      <div class="footer__links container">
+        <div class="footer__nav-link-container">
+          <div class="footer__logo-container">
+            <picture>
+              <img class="footer__logo" src="" height="" width="" alt="Lifetour, организация путешествий в горы.">
+            </picture>
+          </div>
 
-
-        <ul class="footer-nav">
+          <ul class="footer__nav footer-nav">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#tours">Туры</a>
           </li>
@@ -876,10 +906,12 @@
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="#contacts">Контакты</a>
           </li>
-        </ul>
+          </ul>
 
+          <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+        </div>
 
-      <ul class="footer__social-list social">
+        <ul class="footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--vk" href="/">
             <span class="visually-hidden">В контакте</span>
@@ -895,11 +927,10 @@
             <span class="visually-hidden">Реддит</span>
           </a>
         </li>
-      </ul>
+        </ul>
 
-      <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
-
-      <p class="footer__copyright">Политика конфиденциальности</p>
+         <p class="footer__copyright">Политика конфиденциальности</p>
+      </div>
     </footer>
 
 

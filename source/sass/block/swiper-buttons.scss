@@ -13,3 +13,13 @@
     padding-bottom: 4px;
   }
 }
+
+.swiper-buttons--advantages {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}

@@ -1,0 +1,41 @@
+.footer-nav {
+  @include list;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 15px;
+  justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+  }
+}
+
+.footer-nav__link {
+  @include link;
+
+  color: $text-color-base;
+  line-height: 14px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.footer-nav__item:nth-child(2) {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footer-nav__item:nth-child(3) {
+  grid-column: 1;
+  grid-row: 3;
+}
