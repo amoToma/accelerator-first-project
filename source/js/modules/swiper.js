@@ -233,6 +233,10 @@ const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
 
 resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
   direction: 'horizontal',
+
+  //slidesPerGroup: 2,
+  //loopAdditionalSlides: 0,
+  //loopAddBlankSlides: false,
   loop: true,
   modules: [ Navigation ],
   slidesPerView: 'auto',
