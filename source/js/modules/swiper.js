@@ -189,11 +189,15 @@ export const reviewsSwiper = new Swiper('.swiper--reviews', {
 // }
 // breakpoint.addEventListener('change', resizesScreen)
 
-const swiperList = document.querySelector('.advantages__swiper');
-const sliderList = document.querySelector('.advantages__list');
-const sliderItems = Array.from(sliderList.querySelectorAll('.advantages__item'));
+const swiperListAdv = document.querySelector('.advantages__swiper');
+const sliderListAdv = document.querySelector('.advantages__list');
+const sliderItemsAdv = Array.from(sliderListAdv.querySelectorAll('.advantages__item'));
 
-const resizableSwiper = (breakpoint, swiperClass, swiperSettings) => {
+const swiperListGallery = document.querySelector('.gallery__swiper');
+const sliderListGallery = document.querySelector('.gallery__list');
+const sliderItemsGallery = Array.from(sliderListGallery.querySelectorAll('.gallery__item'));
+
+const resizableSwiper = (breakpoint, swiperClass, swiperSettings, swiperList, sliderList, sliderItems) => {
   let swiper;
 
   breakpoint = window.matchMedia(breakpoint);
@@ -244,4 +248,31 @@ resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
     prevEl: '.swiper-buttons__advantages-prev',
     nextEl: '.swiper-buttons__advantages-next',
   }
-});
+},
+swiperListAdv,
+sliderListAdv,
+sliderItemsAdv
+);
+
+resizableSwiper('(max-width: 1439px)', '.swiper--gallery', {
+  direction: 'horizontal',
+  loop: true,
+  modules: [ Navigation ],
+  slidesPerView: 2,
+  spaceBetween: 5,
+  navigation: {
+    prevEl: '.swiper-buttons__gallery-prev',
+    nextEl: '.swiper-buttons__gallery-next',
+  },
+
+  breakpoints: {
+    768: {
+    slidesPerView: 3,
+  }
+}
+
+},
+swiperListGallery,
+sliderListGallery,
+sliderItemsGallery
+);
