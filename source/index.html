@@ -26,7 +26,13 @@
         </button>
 
         <div class="header__info-container">
-          <img class="header__logo" src="/__spritemap#sprite-logo-view" height="42" width="142" alt="Логотип Lifetour.">
+          <div class="header__logo">
+            <svg class="header__logo-icon" width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Lifetour</span>
+            <!-- <img class="" src="/__spritemap#sprite-logo-view" height="42" width="142" alt="Логотип Lifetour."> -->
+          </div>
 
           <nav class="header__navigation navigation">
             <ul class="navigation__list">
@@ -153,7 +159,7 @@
       <section class="tours" data-test="tours" id="tours">
         <div class="tours__container container">
           <div class="tours__header-container swiper-header-container">
-            <h2 class="tours__title title" data-title-duble="Ближайшие туры">Ближайшие туры</h2>
+            <h2 class="tours__title title title--tours" data-title-duble="Ближайшие туры">Ближайшие туры</h2>
             <!-- <span class="tours__title-background title-background" aria-hidden="true">Ближайшие туры</span> -->
             <div class="tours__button-container swiper-buttons">
               <button class="swiper-buttons__tours-prev swiper-button swiper-button--prev" type="button">
@@ -350,7 +356,7 @@
       <section class="training" data-test="training" id="training">
         <div class="training__container container">
           <div class="training__intro-container">
-            <h2 class="training__title title" data-title-duble="Обучение">
+            <h2 class="training__title title title--training" data-title-duble="Обучение">
               Обучение
             </h2>
 
@@ -392,7 +398,10 @@
                     <h4>
                       Александр Прокофьев
                     </h4>
-                    <a href="/">
+                    <a class="instructors-card__link" href="/">
+                      <svg class="instructors-card__link-icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-social-vk"></use>
+                      </svg>
                       <span class="visually-hidden">В контакте</span>
                     </a>
                   </div>
@@ -417,7 +426,10 @@
                     <h4>
                       Светлана Афиногенова
                     </h4>
-                    <a href="/">
+                    <a class="instructors-card__link" href="/">
+                      <svg class="instructors-card__link-icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-social-vk"></use>
+                      </svg>
                       <span class="visually-hidden">В контакте</span>
                     </a>
                   </div>
@@ -442,7 +454,10 @@
                     <h4>
                       Надежда Колесниченко
                     </h4>
-                    <a href="/">
+                    <a class="instructors-card__link" href="/">
+                      <svg class="instructors-card__link-icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-social-vk"></use>
+                      </svg>
                       <span class="visually-hidden">В контакте</span>
                     </a>
                   </div>
@@ -467,7 +482,10 @@
                     <h4>
                       Федор Кайгородов
                     </h4>
-                    <a href="/">
+                    <a class="instructors-card__link" href="/">
+                      <svg class="instructors-card__link-icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-social-vk"></use>
+                      </svg>
                       <span class="visually-hidden">В контакте</span>
                     </a>
                   </div>
@@ -492,7 +510,10 @@
                     <h4>
                       Даниэль Васнецов
                     </h4>
-                    <a href="/">
+                    <a class="instructors-card__link" href="/">
+                      <svg class="instructors-card__link-icon" width="14" height="8">
+                        <use href="/__spritemap#sprite-social-vk"></use>
+                      </svg>
                       <span class="visually-hidden">В контакте</span>
                     </a>
                   </div>
@@ -567,7 +588,13 @@
                 <div class="reviews-card__content-container">
                   <div class="reviews-card__photo-container">
                     <picture>
-                      <img class="reviews-card__photo" src="/" width="" height="" alt="Фролов Александр">
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews-slide1-desktop@1x.webp 1x, img/reviews-slide1-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-slide1-tablet@1x.webp 1x, img/reviews-slide1-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews-slide1-mobile@1x.webp 1x, img/reviews-slide1-mobile@2x.webp 2x" width="250" height="169">
+
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews-slide1-desktop@1x.jpg 1x, img/reviews-slide1-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews-slide1-tablet@1x.jpg 1x, img/reviews-slide1-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__photo" src="img/reviews-slide1-mobile@1x.jpg" srcset="img/reviews-slide1-mobile@2x.jpg 2x" width="250" height="169" alt="Фролов Александр">
                     </picture>
                   </div>
 
@@ -592,7 +619,12 @@
                 <div class="reviews-card__content-container">
                   <div class="reviews-card__photo-container">
                     <picture>
-                      <img class="reviews-card__photo" src="/" width="" height="" alt="Иван Соловьёв">
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews-slide2-desktop@1x.webp 1x, img/reviews-slide2-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-slide2-tablet@1x.webp 1x, img/reviews-slide2-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews-slide2-mobile@1x.webp 1x, img/reviews-slide2-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews-slide2-desktop@1x.jpg 1x, img/reviews-slide2-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews-slide2-tablet@1x.jpg 1x, img/reviews-slide2-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__photo" src="img/reviews-slide2-mobile@1x.jpg" srcset="img/reviews-slide2-mobile@2x.jpg 2x" width="250" height="169" alt="Иван Соловьёв">
                     </picture>
                   </div>
 
@@ -617,7 +649,12 @@
                 <div class="reviews-card__content-container">
                   <div class="reviews-card__photo-container">
                     <picture>
-                      <img class="reviews-card__photo" src="/" width="" height="" alt="Евгения Баженова">
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews-slide3-desktop@1x.webp 1x, img/reviews-slide3-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-slide3-tablet@1x.webp 1x, img/reviews-slide3-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews-slide3-mobile@1x.webp 1x, img/reviews-slide3-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews-slide3-desktop@1x.jpg 1x, img/reviews-slide3-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews-slide3-tablet@1x.jpg 1x, img/reviews-slide3-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__photo" src="img/reviews-slide3-mobile@1x.jpg" srcset="img/reviews-slide3-mobile@2x.jpg 2x" width="250" height="169" alt="Евгения Баженова">
                     </picture>
                   </div>
 
@@ -642,7 +679,12 @@
                 <div class="reviews-card__content-container">
                   <div class="reviews-card__photo-container">
                     <picture>
-                      <img class="reviews-card__photo" src="/" width="" height="" alt="Елена Пирогова">
+                      <source type="image/webp" media="(min-width: 1440px)" srcset="img/reviews-slide4-desktop@1x.webp 1x, img/reviews-slide4-desktop@2x.webp 2x" width="258" height="253">
+                      <source type="image/webp" media="(min-width: 768px)" srcset="img/reviews-slide4-tablet@1x.webp 1x, img/reviews-slide4-tablet@2x.webp 2x" width="186" height="237">
+                      <source type="image/webp" srcset="img/reviews-slide4-mobile@1x.webp 1x, img/reviews-slide4-mobile@2x.webp 2x" width="250" height="169">
+                      <source type="image/jpeg" media="(min-width: 1440px)" srcset="img/reviews-slide4-desktop@1x.jpg 1x, img/reviews-slide4-desktop@2x.jpg 2x" width="258" height="253">
+                      <source type="image/jpeg" media="(min-width: 768px)" srcset="img/reviews-slide4-tablet@1x.jpg 1x, img/reviews-slide4-tablet@2x.jpg 2x" width="186" height="237">
+                      <img class="reviews-card__photo" src="img/reviews-slide4-mobile@1x.jpg" srcset="img/reviews-slide4-mobile@2x.jpg 2x" width="250" height="169" alt="Елена Пирогова">
                     </picture>
                   </div>
 
@@ -743,7 +785,7 @@
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--eco">
                 <h3>
-                  Бережное отношение к природе
+                  Бережное отношение <br>к природе
                 </h3>
                 <p>
                   Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
@@ -766,15 +808,15 @@
       <section class="gallery" data-test="gallery" id="gallery">
         <div class="gallery__header-container container">
           <div class="gallery__header-info-container">
-            <h2 class="gallery__title title" data-title-duble="Фотогалерея">
+            <h2 class="gallery__title title title--gallery" data-title-duble="Фотогалерея">
               Фотогалерея
             </h2>
             <p>
-              Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
+              Добавляйте фото в с хэштегом #лайфтур, <br>а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.
             </p>
           </div>
 
-          <div class="gallery__button-container swiper-buttons">
+          <div class="gallery__button-container swiper-buttons swiper-buttons--gallery">
             <button class="swiper-buttons__gallery-prev swiper-button swiper-button--prev" type="button">
               <span class="visually-hidden">Предыдущий слайд</span>
             </button>
@@ -963,10 +1005,16 @@
 
       <div class="footer__links container">
         <div class="footer__nav-link-container">
-          <div class="footer__logo-container">
+          <!-- <div class="footer__logo-container">
             <picture>
               <img class="footer__logo" src="" height="" width="" alt="Lifetour, организация путешествий в горы.">
             </picture>
+          </div> -->
+          <div class="footer__logo-container">
+            <svg class="footer__logo" width="142" height="42">
+              <use href="/__spritemap#sprite-logo"></use>
+            </svg>
+            <span class="visually-hidden">Логотип Lifetour</span>
           </div>
 
           <ul class="footer__nav footer-nav">
@@ -996,16 +1044,25 @@
         <ul class="footer__social-list social">
         <li class="social__item">
           <a class="social__link social__link--vk" href="/">
+            <svg class="social__icon" width="18" height="9">
+              <use href="/__spritemap#sprite-social-vk"></use>
+            </svg>
             <span class="visually-hidden">В контакте</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--ok" href="/">
+            <svg class="social__icon" width="11" height="16">
+              <use href="/__spritemap#sprite-social-ok"></use>
+            </svg>
             <span class="visually-hidden">Одноклассники</span>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--reddit" href="/">
+            <svg class="social__icon" width="16" height="15">
+              <use href="/__spritemap#sprite-social-reddit"></use>
+            </svg>
             <span class="visually-hidden">Реддит</span>
           </a>
         </li>

@@ -17,6 +17,19 @@
   }
 }
 
+.advantages-card:nth-child(2),
+.advantages-card:nth-child(5) {
+  padding: 20px 9px 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 29px 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 39px 19px;
+  }
+}
+
 .advantages-card__content {
   padding-top: 62px;
   display: flex;
@@ -81,10 +94,17 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 15px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 18px;
+  }
+}
+
+.advantages-card__content h3 br {
+  @media (min-width: $desktop-width) {
+    display: none;
   }
 }

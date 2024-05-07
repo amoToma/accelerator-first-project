@@ -19,18 +19,6 @@
     line-height: 35px;
     padding-bottom: 0;
   }
-
-  &--about,
-  &--reviews {
-    @media (min-width: $desktop-width) {
-      padding-top: 45px;
-      padding-bottom: 0;
-    }
-  }
-
-  &--contacts {
-    padding-bottom: 0;
-  }
 }
 
 .title::after {
@@ -66,9 +54,77 @@
   }
 }
 
+.title--reviews {
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+}
+
+.title--reviews::after {
+  bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 20px;
+  }
+}
+
+.title--about {
+  @media (min-width: $desktop-width) {
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
+}
+
+.title--contacts {
+  padding-bottom: 0;
+}
+
+.title--tours {
+  padding-top: 19px;
+  padding-bottom: 14px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 0;
+    padding-top: 23px;
+  }
+}
+
 .title--about::after {
   @media (min-width: $desktop-width) {
     bottom: 20px;
+  }
+}
+
+.title--advantages {
+  padding-top: 17px;
+  padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 35px;
+    padding-bottom: 0;
   }
 }
 
@@ -86,10 +142,41 @@
   }
 }
 
-.title--contacts::after {
-  bottom: 10px;
+.title--contacts {
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.title--contacts::after {
+  bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+  }
+}
+
+.title--gallery {
+  padding-top: 16px;
+  padding-bottom: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 23px;
+    padding-bottom: 0;
+  }
+}
+
+.title--training {
+  @media (min-width: $desktop-width) {
+    padding-top: 22px;
+    padding-bottom: 0;
   }
 }

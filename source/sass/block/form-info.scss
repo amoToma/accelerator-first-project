@@ -1,4 +1,6 @@
 .form-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,15 +58,25 @@
   flex-direction: column;
   gap: 20px;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  // padding-top: 22px;
+  //padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     gap: 25px;
+    padding-top: 2px;
+    //padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
     gap: 40px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.form-info__header {
+  @media (min-width: $tablet-width) {
+    padding-right: 2px;
   }
 }
 
@@ -80,7 +92,7 @@
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 29px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +109,7 @@
   font-size: 12px;
   line-height: 18px;
   width: 258px;
+  font-weight: 400;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;

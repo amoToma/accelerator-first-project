@@ -43,10 +43,9 @@
 }
 
 .header__logo {
+  margin-bottom: 14px;
   width: 142px;
   height: 42px;
-  object-fit: fill;
-  margin-bottom: 14px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -57,6 +56,13 @@
     margin-left: 32px;
     margin-right: 0;
   }
+}
+
+.header__logo-icon {
+  width: 142px;
+  height: 42px;
+  //object-fit: fill;
+  fill: $background-baze;
 }
 
 .header__navigation {

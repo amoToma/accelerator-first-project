@@ -42,6 +42,25 @@
     font-weight: 600;
     color: $text-color-base;
   }
+
+  &:hover {
+    color: $brand-color;
+    opacity: 0.1;
+  }
+
+  &:focus {
+    outline: none;
+    color: $brand-color;
+  }
+
+  &:active {
+    color: $text-color-accent;
+  }
+
+  &--disabled {
+    color: $text-color-neutral;
+    pointer-events: none;
+  }
 }
 
 .footer__copyright {
@@ -53,6 +72,11 @@
 
 .footer__logo-container {
   width: 142px;
+  height: 42px;
+}
+
+.footer__logo {
+  fill: $text-color-base;
 }
 
 .footer__nav-link-container {

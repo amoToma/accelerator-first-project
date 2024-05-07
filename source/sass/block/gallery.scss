@@ -1,5 +1,14 @@
 .gallery {
   padding-bottom: 3px;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .gallery__swiper {
@@ -17,7 +26,10 @@
 }
 
 .gallery__item {
-  width: 158px;
+  //width: 158px;
+  @media (min-width: $desktop-width) {
+    width: 284px;
+  }
 }
 
 .gallery__list {
@@ -26,5 +38,63 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    gap: 5px;
+  }
+}
+
+.gallery__title {
+  margin-bottom: 10px;
+
+   @media (min-width: $tablet-width) {
+     margin-bottom: 20px;
+   }
+
+   @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
+}
+
+.gallery__header-info-container p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 420px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 610px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.gallery__header-info-container br {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.gallery__header-container {
+  padding-bottom: 31px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 21px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 46px;
   }
 }

@@ -259,7 +259,7 @@ resizableSwiper('(max-width: 1439px)', '.swiper--gallery', {
   loop: true,
   modules: [ Navigation ],
   slidesPerView: 2,
-  spaceBetween: 5,
+  spaceBetween: 4,
   navigation: {
     prevEl: '.swiper-buttons__gallery-prev',
     nextEl: '.swiper-buttons__gallery-next',

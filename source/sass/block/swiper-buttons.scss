@@ -23,3 +23,9 @@
     display: block;
   }
 }
+
+.swiper-buttons--gallery {
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
