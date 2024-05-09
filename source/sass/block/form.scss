@@ -74,22 +74,46 @@
     box-shadow: inset 0 0 0 1px $background-neutral;
   }
 
-  // &::placeholder {
-  //   outline: none;
-  //   box-shadow: inset 0 0 0 1px $brand-color;
-  //   color: rgba($brand-color, $alpha: 0.5);
-  // }
+   &:placeholder-shown {
+     box-shadow: inset 0 0 0 1px $brand-color;
+     color: rgba(2, 102, 193, 0.5);
+   }
+
+   &--error {
+    box-shadow: inset 0 0 0 1px #ff121f;
+    color: rgba(45, 56, 63, 0.5)
+   }
+
+   &--error,
+  &--error:hover,
+  &--error:focus {
+    box-shadow: inset 0 0 0 1px #ff121f;
+  }
+
+  //  &:invalid {
+  //   box-shadow: inset 0 0 0 1px #ff121f;
+  //   color: rgba(45, 56, 63, 0.5)
+  //  }
 }
 
-// .form__input:placeholder-shown + .form__label,
-// .form__input:focus + .form__label,
-// .form__input:required:valid + .form__label
+.form__input:placeholder-shown + .form__label,
+.form__input:focus + .form__label,
+.form__input:valid + .form__label,
+.form__input--error + .form__label {
+  opacity: 0;
+}
 
-// {
-//   opacity: 0;
+
+
+// .form__input:placeholder-shown  {
+//   box-shadow: inset 0 0 0 1px $border-base;
 // }
 
-
+// .form__input--activ {
+//   border: none;
+//   outline: none;
+//   box-shadow: inset 0 0 0 1px $brand-color;
+// }
 
 // .form__input:not(:valid) + .form__label {
 //   opacity: 0;
