@@ -23,10 +23,42 @@
 
   color: $text-color-base;
   line-height: 14px;
+  position: relative;
 
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 16px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: calc(100% + 10px);
+    height: calc(100% + 6px);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+  &:hover::after {
+    border-bottom: solid 1px $border-base;
+  }
+
+  &:focus {
+   outline: none;
+  }
+
+  &:focus::after {
+    border: solid 1px $border-base;
+  }
+
+  &:active {
+    color: $brand-color;
+  }
+
+  --disabled {
+    color: $text-color-neutral;
   }
 }
 
