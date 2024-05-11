@@ -99,9 +99,8 @@
   height: 14px;
   background-color: $brand-color;
   border-radius: 50%;
-  transform: translate(0, -50%);
   left: -29px;
-  top: 50%;
+  top: 11px;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -109,6 +108,7 @@
 
   @media (min-width: $desktop-width) {
     display: block;
+    transform: translate(0, -50%);
     top: auto;
     bottom: -21px;
     left: 10px;
@@ -154,7 +154,7 @@
 }
 
 .process-training__item:first-child::before {
-  top: 50%;
+  top: 15px;
 
   @media (min-width: $desktop-width) {
     top: auto;
@@ -164,7 +164,7 @@
 
 .process-training__item:last-child::before {
   top: auto;
-  bottom: 50%;
+  bottom: calc(100% - 11px);
 
   @media (min-width: $desktop-width) {
     bottom: -8px;

@@ -71,12 +71,21 @@
 }
 
 .footer__logo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: min-content;
+}
+
+.footer__logo {
   width: 142px;
   height: 42px;
 }
 
-.footer__logo {
+.footer__logo-icon {
   fill: $text-color-base;
+  width: 142px;
+  height: 42px;
 }
 
 .footer__nav-link-container {
@@ -90,5 +99,15 @@
     gap: 42px;
     justify-content: space-between;
     width: 100%;
+  }
+}
+
+.footer__tel-container {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }

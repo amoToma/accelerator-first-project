@@ -79,17 +79,13 @@
 }
 
 .header__logo {
-
   width: 142px;
   height: 42px;
-
-
 }
 
 .header__logo-icon {
   width: 142px;
   height: 42px;
-  //object-fit: fill;
   fill: $background-baze;
 }
 
@@ -172,16 +168,17 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  max-width: 142px;
+  //max-width: 142px;
   justify-content: flex-end;
+  flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    max-width: 150px;
+    //max-width: 150px;
   }
 
   @media (min-width: $desktop-width) {
     //margin-left: auto;
-    max-width: 157px;
+    //max-width: 157px;
   }
 }
 
