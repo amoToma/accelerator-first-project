@@ -4,8 +4,26 @@
   position: relative;
 }
 
+.header__overlay {
+  position: relative;
+}
+
+.header__overlay::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 100%);
+  top: 100%;
+  left: 0;
+  background-color: $background-dark;
+  opacity: 0.6;
+  z-index: 3;
+}
+
 .header__tel-link {
   @include link;
+
   color: inherit;
   font-weight: 600;
   line-height: 14px;
@@ -42,20 +60,30 @@
   }
 }
 
-.header__logo {
+.header__logo-container {
   margin-bottom: 14px;
-  width: 142px;
-  height: 42px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: min-content;
   }
 
   @media (min-width: $desktop-width) {
     margin-left: 32px;
     margin-right: 0;
   }
+}
+
+.header__logo {
+
+  width: 142px;
+  height: 42px;
+
+
 }
 
 .header__logo-icon {
@@ -83,18 +111,32 @@
   top: 100%;
   overflow: scroll;
   max-height: calc(100vh - 100%);
-  z-index: 2;
+  z-index: 3;
 
   @media (min-width: $desktop-width) {
     position: static;
   }
 }
 
+// .header__navigation--open::after {
+//   content: "";
+//   position: absolute;
+//   display: block;
+//   width: 100%;
+//   height: calc(100vh - 100%);
+//   top: 100%;
+//   left: 0;
+//   background-color: $background-dark;
+//   opacity: 0.6;
+//   z-index: 3;
+// }
+
 .header__container {
   display: flex;
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
+  flex-wrap: wrap;
 
   @media (min-width: $tablet-width) {
     align-items: center;
@@ -109,8 +151,13 @@
 }
 
 .header__info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  flex-wrap: wrap;
+
   @media (min-width: $tablet-width) {
-    display: flex;
+    flex-direction: row;
     align-items: center;
     width: 410px;
   }
@@ -118,5 +165,34 @@
   @media (min-width: $desktop-width) {
     width: 100%;
     justify-content: space-between;
+  }
+}
+
+.header__tel-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  max-width: 142px;
+  justify-content: flex-end;
+
+  @media (min-width: $tablet-width) {
+    max-width: 150px;
+  }
+
+  @media (min-width: $desktop-width) {
+    //margin-left: auto;
+    max-width: 157px;
+  }
+}
+
+.header__button-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100px;
+  align-items: flex-start;
+
+  @media (min-width: $tablet-width) {
+    max-width: 242px;
   }
 }

@@ -211,7 +211,7 @@ const resizableSwiper = (breakpoint, swiperClass, swiperSettings, swiperList, sl
     sliderList.classList.remove('swiper-wrapper');
     sliderItems.forEach((item) => {
       item.classList.remove('swiper-slide');
-    })
+    });
 
     if (breakpoint.matches) {
       swiperList.classList.add('swiper');
@@ -244,6 +244,9 @@ resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
   loop: true,
   modules: [ Navigation ],
   slidesPerView: 'auto',
+  //watchSlidesProgress: true,
+  //centeredSlides: true,
+  //initialSlide: 2,
   navigation: {
     prevEl: '.swiper-buttons__advantages-prev',
     nextEl: '.swiper-buttons__advantages-next',

@@ -1,7 +1,12 @@
-const burger = document.querySelector('.burger');
-const menu = document.querySelector('.header__navigation');
-const menuLinks = Array.from(document.querySelectorAll('.navigation__link'));
+const header = document.querySelector('.header');
+const burger = header.querySelector('.burger');
+const menu = header.querySelector('.header__navigation');
+const menuLinks = Array.from(header.querySelectorAll('.navigation__link'));
 const body = document.querySelector('body');
+
+const hideOverlay = () => {
+  header.classList.remove('header__overlay');
+};
 
 const disabledScroll = () => {
   body.style.overflow = 'hidden';
@@ -16,12 +21,14 @@ const closeMenu = () => {
     menu.classList.remove('header__navigation--open');
     burger.classList.remove('burger--open');
     enabledScroll();
+    hideOverlay();
   }
 };
 
 const openMenu = () => {
   burger.classList.toggle('burger--open');
   menu.classList.toggle('header__navigation--open');
+  header.classList.toggle('header__overlay');
   menuLinks.forEach((item) => {
     item.addEventListener('click', closeMenu);
   });

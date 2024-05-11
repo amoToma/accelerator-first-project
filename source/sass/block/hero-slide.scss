@@ -193,16 +193,25 @@
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 
   &--moon {
-    background-image: url("/__spritemap#sprite-hero-icon-moon-view");
+    background-image: url("/__spritemap#sprite-icon-moon-hero-view");
     background-repeat: no-repeat;
     background-size: 12px 12px;
     background-position: 20px center;
   }
 
   &--level {
-    background-image: url("/__spritemap#sprite-hero-icon-level-view");
+    background-image: url("/__spritemap#sprite-icon-level-hero-view");
     background-repeat: no-repeat;
     background-size: 12px 12px;
     background-position: 20px center;
   }
+}
+
+.hero-slide__button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-height: 254px;
+  flex-wrap: wrap;
 }

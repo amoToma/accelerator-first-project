@@ -1,5 +1,5 @@
 const form = document.querySelector('.form');
-const inputs = Array.from(form.querySelectorAll('.form__input'));
+//const inputs = Array.from(form.querySelectorAll('.form__input'));
 const buttonForm = form.querySelector('.form__button');
 const inputPhone = form.querySelector('.form__input--phone');
 const inputEmail = form.querySelector('.form__input--email');
@@ -14,6 +14,7 @@ const hideInvalidInput = (item) => {
 
 const testedValid = (input, errorText) => {
   const isValid = input.checkValidity();
+
 
   if (!isValid && input.value.length === 0) {
     showInvalidInput(input);
@@ -58,14 +59,6 @@ const onButtonSubmitClick = () => {
 //     });
 //   });
 // };
-
-
-
-
-
-
-
-
 
 buttonForm.addEventListener('click', onButtonSubmitClick);
 

@@ -1,5 +1,6 @@
 .advantages-card {
   padding: 19px 9px;
+  background-color: $background-baze;
   border: solid 1px rgba(2, 102, 193, 0.1);
 
   @media (min-width: $tablet-width) {
@@ -106,5 +107,12 @@
 .advantages-card__content h3 br {
   @media (min-width: $desktop-width) {
     display: none;
+  }
+}
+
+.advantages-card__content-container {
+  @media (min-width: $desktop-width) {
+    overflow-y: auto;
+    max-height: 170px;
   }
 }

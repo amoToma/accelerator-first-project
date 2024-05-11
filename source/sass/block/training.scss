@@ -17,7 +17,6 @@
 }
 
 .training__title {
-  //padding-bottom: 17px;
   margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
@@ -32,15 +31,9 @@
 }
 
 .training__intro-container {
-  //padding-top: 16px;
   padding-bottom: 25px;
 
-  @media (min-width: $tablet-width) {
-    //padding-top: 20px;
-  }
-
   @media (min-width: $desktop-width) {
-    //padding-top: 19px;
     padding-bottom: 57px;
   }
 }

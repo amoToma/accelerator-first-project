@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LIFETOUR</title>
     <link rel="stylesheet" href="sass/style.scss">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
 
     <link rel="preload" href="fonts/Montserrat-Light.ttf" as="font" type="font/ttf" crossorigin="anonymous">
     <link rel="preload" href="fonts/Montserrat-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
@@ -19,19 +23,22 @@
   <body class="page-body">
     <header class="header" data-test="header">
       <div class="header__container container">
-        <button class="header__button burger" type="button">
-          <span class="visually-hidden">
-            Меню
-          </span>
-        </button>
+        <div class="header__button-container">
+          <button class="header__button burger" type="button">
+            <span class="visually-hidden">
+              Меню
+            </span>
+          </button>
+        </div>
 
         <div class="header__info-container">
-          <div class="header__logo">
+          <div class="header__logo-container">
+            <div class="header__logo">
             <svg class="header__logo-icon" width="142" height="42">
               <use href="/__spritemap#sprite-logo"></use>
             </svg>
             <span class="visually-hidden">Логотип Lifetour</span>
-            <!-- <img class="" src="/__spritemap#sprite-logo-view" height="42" width="142" alt="Логотип Lifetour."> -->
+            </div>
           </div>
 
           <nav class="header__navigation navigation">
@@ -56,8 +63,9 @@
               </li>
             </ul>
           </nav>
-
-          <a class="header__tel-link" href="tel:+78000000000">8 800 000-00-00</a>
+          <div class="header__tel-container">
+            <a class="header__tel-link" href="tel:+78000000000">8&nbsp;800&nbsp;000&#8209;00&#8209;00</a>
+          </div>
         </div>
       </div>
     </header>
@@ -79,7 +87,9 @@
                 <p>
                   В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.
                 </p>
-                <a class="hero-slide__link button" href="/">Смотреть тур</a>
+                <div class="hero-slide__button">
+                  <a class="hero-slide__link button" href="/">Смотреть тур</a>
+                </div>
               </div>
               <div class="hero-slide__nameplate-container container">
                 <p class="hero-slide__nameplate hero-slide__nameplate--moon">6 дней/5 ночей</p>
@@ -158,9 +168,8 @@
 
       <section class="tours" data-test="tours" id="tours">
         <div class="tours__container container">
-          <div class="tours__header-container swiper-header-container">
+          <div class="tours__header-container swiper-header-container" >
             <h2 class="tours__title title title--tours" data-title-duble="Ближайшие туры">Ближайшие туры</h2>
-            <!-- <span class="tours__title-background title-background" aria-hidden="true">Ближайшие туры</span> -->
             <div class="tours__button-container swiper-buttons">
               <button class="swiper-buttons__tours-prev swiper-button swiper-button--prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -394,20 +403,22 @@
                     </picture>
                   </div>
 
-                  <div class="instructors-card__header">
-                    <h4>
-                      Александр Прокофьев
-                    </h4>
-                    <a class="instructors-card__link" href="/">
-                      <svg class="instructors-card__link-icon" width="14" height="8">
-                        <use href="/__spritemap#sprite-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">В контакте</span>
-                    </a>
+                  <div class="instructors-card__content">
+                    <div class="instructors-card__header">
+                      <h4>
+                        Александр Прокофьев
+                      </h4>
+                      <a class="instructors-card__link" href="/">
+                        <svg class="instructors-card__link-icon" width="14" height="8">
+                          <use href="/__spritemap#sprite-social-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">В контакте</span>
+                      </a>
+                    </div>
+                    <p>
+                      Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.
+                    </p>
                   </div>
-                  <p>
-                    Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.
-                  </p>
                 </li>
 
                 <li class="instructors__item instructors-card swiper-slide">
@@ -422,20 +433,22 @@
                     </picture>
                   </div>
 
-                  <div class="instructors-card__header">
-                    <h4>
-                      Светлана Афиногенова
-                    </h4>
-                    <a class="instructors-card__link" href="/">
-                      <svg class="instructors-card__link-icon" width="14" height="8">
-                        <use href="/__spritemap#sprite-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">В контакте</span>
-                    </a>
+                  <div class="instructors-card__content">
+                    <div class="instructors-card__header">
+                      <h4>
+                        Светлана Афиногенова
+                      </h4>
+                      <a class="instructors-card__link" href="/">
+                        <svg class="instructors-card__link-icon" width="14" height="8">
+                          <use href="/__spritemap#sprite-social-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">В контакте</span>
+                      </a>
+                    </div>
+                    <p>
+                      Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.
+                    </p>
                   </div>
-                  <p>
-                    Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.
-                  </p>
                 </li>
 
                 <li class="instructors__item instructors-card swiper-slide">
@@ -450,20 +463,22 @@
                     </picture>
                   </div>
 
-                  <div class="instructors-card__header">
-                    <h4>
-                      Надежда Колесниченко
-                    </h4>
-                    <a class="instructors-card__link" href="/">
-                      <svg class="instructors-card__link-icon" width="14" height="8">
-                        <use href="/__spritemap#sprite-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">В контакте</span>
-                    </a>
+                  <div class="instructors-card__content">
+                    <div class="instructors-card__header">
+                      <h4>
+                        Надежда Колесниченко
+                      </h4>
+                      <a class="instructors-card__link" href="/">
+                        <svg class="instructors-card__link-icon" width="14" height="8">
+                          <use href="/__spritemap#sprite-social-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">В контакте</span>
+                      </a>
+                    </div>
+                    <p>
+                      Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
+                    </p>
                   </div>
-                  <p>
-                    Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.
-                  </p>
                 </li>
 
                 <li class="instructors__item instructors-card swiper-slide">
@@ -478,20 +493,22 @@
                     </picture>
                   </div>
 
-                  <div class="instructors-card__header">
-                    <h4>
-                      Федор Кайгородов
-                    </h4>
-                    <a class="instructors-card__link" href="/">
-                      <svg class="instructors-card__link-icon" width="14" height="8">
-                        <use href="/__spritemap#sprite-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">В контакте</span>
-                    </a>
+                  <div class="instructors-card__content">
+                    <div class="instructors-card__header">
+                      <h4>
+                        Федор Кайгородов
+                      </h4>
+                      <a class="instructors-card__link" href="/">
+                        <svg class="instructors-card__link-icon" width="14" height="8">
+                          <use href="/__spritemap#sprite-social-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">В контакте</span>
+                      </a>
+                    </div>
+                    <p>
+                      Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.
+                    </p>
                   </div>
-                  <p>
-                    Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.
-                  </p>
                 </li>
 
                 <li class="instructors__item instructors-card swiper-slide">
@@ -506,20 +523,22 @@
                     </picture>
                   </div>
 
-                  <div class="instructors-card__header">
-                    <h4>
-                      Даниэль Васнецов
-                    </h4>
-                    <a class="instructors-card__link" href="/">
-                      <svg class="instructors-card__link-icon" width="14" height="8">
-                        <use href="/__spritemap#sprite-social-vk"></use>
-                      </svg>
-                      <span class="visually-hidden">В контакте</span>
-                    </a>
+                  <div class="instructors-card__content">
+                    <div class="instructors-card__header">
+                      <h4>
+                        Даниэль Васнецов
+                      </h4>
+                      <a class="instructors-card__link" href="/">
+                        <svg class="instructors-card__link-icon" width="14" height="8">
+                          <use href="/__spritemap#sprite-social-vk"></use>
+                        </svg>
+                        <span class="visually-hidden">В контакте</span>
+                      </a>
+                    </div>
+                    <p>
+                      Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.
+                    </p>
                   </div>
-                  <p>
-                    Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.
-                  </p>
                 </li>
               </ul>
             </div>
@@ -713,7 +732,6 @@
         <h2 class="advantages__title title title--advantages" data-title-duble="Преимущества">
           Преимущества
         </h2>
-
         <div class="advantages__swiper swiper swiper--advantages">
           <ul class="advantages__list swiper-wrapper">
             <!-- <li class="advantages__item advantages-card swiper-slide">
@@ -740,61 +758,70 @@
 
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--security">
-                <h3>
-                  Безопасность
-                </h3>
-                <p>
-                  Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
-                </p>
+                <div class="advantages-card__content-container">
+                  <h3>
+                    Безопасность
+                  </h3>
+                  <p>
+                    Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--info">
-                <h3>
-                  Экспертиза и знания
-                </h3>
-                <p>
-                  Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
-                </p>
+                <div class="advantages-card__content-container">
+                  <h3>
+                    Экспертиза и знания
+                  </h3>
+                  <p>
+                    Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--outfit">
-                <h3>
-                  Оборудование и снаряжение
-                </h3>
-                <p>
-                  Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
-                </p>
+                <div class="advantages-card__content-container">
+                  <h3>
+                    Оборудование и снаряжение
+                  </h3>
+                  <p>
+                    Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--rout">
-                <h3>
-                  Индивидуальные маршруты
-                </h3>
-                <p>
-                  Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
-                </p>
+                <div class="advantages-card__content-container">
+                  <h3>
+                    Индивидуальные маршруты
+                  </h3>
+                  <p>
+                    Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.
+                  </p>
+                </div>
               </div>
             </li>
 
             <li class="advantages__item advantages-card swiper-slide">
               <div class="advantages-card__content advantages-card__content--eco">
-                <h3>
-                  Бережное отношение <br>к природе
-                </h3>
-                <p>
-                  Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
-                </p>
+                <div class="advantages-card__content-container">
+                  <h3>
+                    Бережное отношение <br>к природе
+                  </h3>
+                  <p>
+                    Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
+                  </p>
+                </div>
               </div>
             </li>
           </ul>
         </div>
-
         <div class="advantages__button-container swiper-buttons swiper-buttons--advantages">
           <button class="swiper-buttons__advantages-prev swiper-button swiper-button--prev" type="button">
             <span class="visually-hidden">Предыдущий слайд</span>
@@ -1007,11 +1034,6 @@
 
       <div class="footer__links container">
         <div class="footer__nav-link-container">
-          <!-- <div class="footer__logo-container">
-            <picture>
-              <img class="footer__logo" src="" height="" width="" alt="Lifetour, организация путешествий в горы.">
-            </picture>
-          </div> -->
           <div class="footer__logo-container">
             <svg class="footer__logo" width="142" height="42">
               <use href="/__spritemap#sprite-logo"></use>
@@ -1040,7 +1062,7 @@
           </li>
           </ul>
 
-          <a class="footer__phone" href="tel:+78007253232">8 800 725-32-32</a>
+          <a class="footer__phone" href="tel:+78007253232">8&nbsp;800&nbsp;725&#8209;32&#8209;32</a>
         </div>
 
         <ul class="footer__social-list social">

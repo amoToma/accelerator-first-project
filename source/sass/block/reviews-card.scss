@@ -4,7 +4,6 @@
   background-color: $background-baze;
   padding: 20px;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
-  //margin-left: 15px;
 
   @media (min-width: $tablet-width) {
     box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
@@ -33,11 +32,6 @@
     align-items: flex-start;
   }
 }
-
-// .reviews__content-container {
-//   background-color: $background-baze;
-//   padding: 20px;
-// }
 
 .reviews-card__photo-container {
   width: 100%;
@@ -78,13 +72,17 @@
 
 .reviews-card__content {
   margin-bottom: 15px;
+  max-height: 208px;
+  overflow-y: auto;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
+    max-height: 172px;
   }
 
   @media (min-width: $desktop-width) {
     margin-bottom: 2px;
+    max-height: 208px;
   }
 }
 

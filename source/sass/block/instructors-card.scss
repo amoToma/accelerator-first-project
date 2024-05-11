@@ -86,3 +86,16 @@
   height: 8px;
   fill: $border-base;
 }
+
+.instructors-card__content {
+  max-height: 111px;
+  overflow-y: auto;
+
+  @media (min-width: $tablet-width) {
+    max-height: 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-height: 111px;
+  }
+}
