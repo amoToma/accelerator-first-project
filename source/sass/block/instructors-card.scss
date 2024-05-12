@@ -42,6 +42,14 @@
   width: 100%;
 }
 
+.instructors-card__link-container {
+  display: flex;
+  //flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 92px;
+}
+
 .instructors-card__link {
   display: block;
   width: 24px;

@@ -6,6 +6,11 @@
   position: relative;
 }
 
+.tours-card__title-container {
+  overflow: auto;
+  max-height: 270px;
+}
+
 .tours-card__info-container {
 
   display: flex;
