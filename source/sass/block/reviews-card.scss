@@ -58,20 +58,15 @@
 
 .reviews-card blockquote {
   margin: 0;
-  //max-height: 257px;
-  //overflow-y: auto;
 
   @media (min-width: $tablet-width) {
     width: 299px;
     height: 237px;
-    //max-height: 237px;
-
   }
 
   @media (min-width: $desktop-width) {
     width: 352px;
     height: 253px;
-    //max-height: 253px;
   }
 }
 
@@ -128,16 +123,10 @@
 }
 
 .reviews-card__author-info {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: flex-end;
   line-height: 0;
-  //max-height: 32px;
   overflow: hidden;
-  //overflow-y: auto;
 
-
-    @media (min-width: $tablet-width) {
-      max-height: 33px;
-    }
- }
+  @media (min-width: $tablet-width) {
+    max-height: 33px;
+  }
+}

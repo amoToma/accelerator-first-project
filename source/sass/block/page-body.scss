@@ -14,7 +14,8 @@
 
 .page-body__main {
   flex-grow: 1;
-  background-image: image-set(
+  background-image:
+    image-set(
       url("../img/background-main-mobile@1x.webp") type("image/webp") 1x,
       url("../img/background-main-mobile@1x.png") type("image/png") 1x,
     );
@@ -23,30 +24,31 @@
   background-position: top 578px left calc(50% + 192px);
 
   @media (resolution >= 2dppx) {
-    background-image: image-set(
-      url("../img/background-main-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/background-main-mobile@2x.png") type("image/png") 2x,
-    );
+    background-image:
+      image-set(
+        url("../img/background-main-mobile@2x.webp") type("image/webp") 2x,
+        url("../img/background-main-mobile@2x.png") type("image/png") 2x,
+      );
   }
 
   @media (min-width: $tablet-width) {
     background-image:
-    image-set(
-      url("../img/training-background-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/training-background-tablet@1x.png") type("image/png") 1x,
-    ),
-    image-set(
-      url("../img/background-main-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/background-main-tablet@1x.png") type("image/png") 1x,
-    ),
-    image-set(
-      url("../img/adv-background1-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/adv-background1-tablet@1x.png") type("image/png") 1x,
-    ),
-    image-set(
-      url("../img/adv-background2-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/adv-background2-tablet@1x.png") type("image/png") 1x,
-    );
+      image-set(
+        url("../img/training-background-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/training-background-tablet@1x.png") type("image/png") 1x,
+      ),
+      image-set(
+        url("../img/background-main-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/background-main-tablet@1x.png") type("image/png") 1x,
+      ),
+      image-set(
+        url("../img/adv-background1-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/adv-background1-tablet@1x.png") type("image/png") 1x,
+      ),
+      image-set(
+        url("../img/adv-background2-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/adv-background2-tablet@1x.png") type("image/png") 1x,
+      );
     background-size:
       840px 280px,
       602px 1630px,
@@ -77,7 +79,7 @@
           url("../img/adv-background2-tablet@2x.webp") type("image/webp") 2x,
           url("../img/adv-background2-tablet@2x.png") type("image/png") 2x,
         );
-      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -104,24 +106,24 @@
       top 3509px left calc(50% - 433px),
       top 3695px left calc(50% + 665px);
 
-      @media (resolution >= 2dppx) {
-        background-image:
-      image-set(
-        url("../img/training-background-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/training-background-tablet@2x.png") type("image/png") 2x,
-      ),
-      image-set(
-        url("../img/background-main-desktop@2x.webp") type("image/webp") 2x,
-        url("../img/background-main-desktop@2x.png") type("image/png") 2x,
-      ),
-      image-set(
-        url("../img/adv-background1-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/adv-background1-tablet@2x.png") type("image/png") 2x,
-      ),
-      image-set(
-        url("../img/adv-background2-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/adv-background2-tablet@2x.png") type("image/png") 2x,
-      );
-      }
+    @media (resolution >= 2dppx) {
+      background-image:
+        image-set(
+          url("../img/training-background-tablet@2x.webp") type("image/webp") 2x,
+          url("../img/training-background-tablet@2x.png") type("image/png") 2x,
+        ),
+        image-set(
+          url("../img/background-main-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/background-main-desktop@2x.png") type("image/png") 2x,
+        ),
+        image-set(
+          url("../img/adv-background1-tablet@2x.webp") type("image/webp") 2x,
+          url("../img/adv-background1-tablet@2x.png") type("image/png") 2x,
+        ),
+        image-set(
+          url("../img/adv-background2-tablet@2x.webp") type("image/webp") 2x,
+          url("../img/adv-background2-tablet@2x.png") type("image/png") 2x,
+        );
+    }
   }
 }

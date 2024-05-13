@@ -3,8 +3,6 @@
   padding-bottom: 20px;
   position: relative;
 
-  //background-clip: polygon(100% 0%, 100% 400px, 0% 400px, 0% 0% );
-
   @media (min-width: $tablet-width) {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -25,10 +23,11 @@
   transform: translate(-50%, 0);
   top: 20px;
   left: 50%;
-  background-image: image-set(
-    url("../img/about-mobile@1x.webp") type("image/webp") 1x,
-    url("../img/about-mobile@1x.jpg") type("image/jpeg") 1x,
-  );
+  background-image:
+    image-set(
+      url("../img/about-mobile@1x.webp") type("image/webp") 1x,
+      url("../img/about-mobile@1x.jpg") type("image/jpeg") 1x,
+    );
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -36,10 +35,11 @@
   object-position: bottom;
 
   @media (resolution >= 2dppx) {
-    background-image: image-set(
-      url("../img/about-mobile@2x.webp") type("image/webp") 2x,
-      url("../img/about-mobile@2x.jpg") type("image/jpeg") 2x,
-    );
+    background-image:
+      image-set(
+        url("../img/about-mobile@2x.webp") type("image/webp") 2x,
+        url("../img/about-mobile@2x.jpg") type("image/jpeg") 2x,
+      );
   }
 
   @media (min-width: $tablet-width) {
@@ -49,16 +49,18 @@
     left: calc(50% + 60px);
     top: 174px;
     background-position: center bottom;
-    background-image: image-set(
-      url("../img/about-tablet@1x.webp") type("image/webp") 1x,
-      url("../img/about-tablet@1x.jpg") type("image/jpeg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/about-tablet@1x.webp") type("image/webp") 1x,
+        url("../img/about-tablet@1x.jpg") type("image/jpeg") 1x,
+      );
 
     @media (resolution >= 2dppx) {
-      background-image: image-set(
-        url("../img/about-tablet@2x.webp") type("image/webp") 2x,
-        url("../img/about-tablet@2x.jpg") type("image/jpeg") 2x,
-      );
+      background-image:
+        image-set(
+          url("../img/about-tablet@2x.webp") type("image/webp") 2x,
+          url("../img/about-tablet@2x.jpg") type("image/jpeg") 2x,
+        );
     }
   }
 
@@ -67,20 +69,21 @@
     top: 100px;
     width: calc(50% - 60px);
     left: calc(50% - 60px);
-    background-image: image-set(
-      url("../img/about-desktop@1x.webp") type("image/webp") 1x,
-      url("../img/about-desktop@1x.jpg") type("image/jpeg") 1x,
-    );
+    background-image:
+      image-set(
+        url("../img/about-desktop@1x.webp") type("image/webp") 1x,
+        url("../img/about-desktop@1x.jpg") type("image/jpeg") 1x,
+      );
 
     @media (resolution >= 2dppx) {
-      background-image: image-set(
-        url("../img/about-desktop@2x.webp") type("image/webp") 2x,
-        url("../img/about-desktop@2x.jpg") type("image/jpeg") 2x,
-      );
+      background-image:
+        image-set(
+          url("../img/about-desktop@2x.webp") type("image/webp") 2x,
+          url("../img/about-desktop@2x.jpg") type("image/jpeg") 2x,
+        );
     }
   }
 }
-
 
 .about__title {
   margin-bottom: 25px;

@@ -2,46 +2,39 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-
-//global
-@import "./global/fonts.scss";
-@import "./global/global.scss";
-@import "./global/variables.scss";
-@import "./global/visually-hidden.scss";
-@import "./global/mixins.scss";
-
-//block
-@import "./block/page-body.scss";
-@import "./block/container.scss";
-@import "./block/header.scss";
-@import "./block/navigation.scss";
-@import "./block/burger.scss";
-@import "./block/hero.scss";
-@import "./block/hero-slide.scss";
-@import "./block/hero-slide.scss";
-@import "./block/button.scss";
-@import "./block/swiper-pagination.scss";
-@import "./block/title.scss";
-@import "./block/tours.scss";
-@import "./block/tours-card.scss";
-@import "./block/swiper-button.scss";
-@import "./block/training.scss";
-@import "./block/instructors.scss";
-@import "./block/swiper-buttons.scss";
-@import "./block/instructors-card.scss";
-@import "./block/process-training.scss";
-@import "./block/about.scss";
-@import "./block/reviews.scss";
-@import "./block/reviews-card.scss";
-@import "./block/advantages.scss";
-@import "./block/advantages-card.scss";
-@import "./block/social.scss";
-@import "./block/contacts.scss";
-@import "./block/footer.scss";
-@import "./block/footer-nav.scss";
-@import "./block/form-info.scss";
-@import "./block/form.scss";
-@import "./block/gallery.scss";
-@import "./block/gallery-card.scss";
-
-
+@import "./global/fonts";
+@import "./global/global";
+@import "./global/variables";
+@import "./global/visually-hidden";
+@import "./global/mixins";
+@import "./block/page-body";
+@import "./block/container";
+@import "./block/header";
+@import "./block/navigation";
+@import "./block/burger";
+@import "./block/hero";
+@import "./block/hero-slide";
+@import "./block/button";
+@import "./block/swiper-pagination";
+@import "./block/title";
+@import "./block/tours";
+@import "./block/tours-card";
+@import "./block/swiper-button";
+@import "./block/training";
+@import "./block/instructors";
+@import "./block/swiper-buttons";
+@import "./block/instructors-card";
+@import "./block/process-training";
+@import "./block/about";
+@import "./block/reviews";
+@import "./block/reviews-card";
+@import "./block/advantages";
+@import "./block/advantages-card";
+@import "./block/social";
+@import "./block/contacts";
+@import "./block/footer";
+@import "./block/footer-nav";
+@import "./block/form-info";
+@import "./block/form";
+@import "./block/gallery";
+@import "./block/gallery-card";

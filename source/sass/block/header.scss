@@ -114,19 +114,6 @@
   }
 }
 
-// .header__navigation--open::after {
-//   content: "";
-//   position: absolute;
-//   display: block;
-//   width: 100%;
-//   height: calc(100vh - 100%);
-//   top: 100%;
-//   left: 0;
-//   background-color: $background-dark;
-//   opacity: 0.6;
-//   z-index: 3;
-// }
-
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -168,18 +155,8 @@
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  //max-width: 142px;
   justify-content: flex-end;
   flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    //max-width: 150px;
-  }
-
-  @media (min-width: $desktop-width) {
-    //margin-left: auto;
-    //max-width: 157px;
-  }
 }
 
 .header__button-container {

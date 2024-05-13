@@ -6,10 +6,6 @@
 .tours__container {
   padding-top: 20px;
   padding-bottom: 20px;
-  //display: flex;
-  //flex-direction: column;
-  //gap: 25px;
-  //min-width: 0;
 
   @media (min-width: $tablet-width) {
     padding-top: 40px;
@@ -22,50 +18,18 @@
   }
 }
 
- .tours__header-container {
-   //padding-top: 19px;
-   //padding-bottom: 14px;
-   margin-bottom: 25px;
+.tours__header-container {
+  margin-bottom: 25px;
 
   @media (min-width: $tablet-width) {
-    //padding-top: 20px;
-    //padding-bottom: 0;
     display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    //padding-top: 20px;
     margin-bottom: 50px;
   }
- }
-
-.tours__title {
- // padding-top: 3px;
 }
-
-// .tours__button-container {
-//   display: none;
-
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//     display: flex;
-//     gap: 4px;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     align-items: flex-end;
-//     align-self: flex-start;
-//   }
-// }
-
-// .tours__button {
-//   display: none;
-
-//   @media (min-width: $tablet-width) {
-//     display: block;
-//   }
-// }
 
 .tours__list {
   @include list;
@@ -155,5 +119,3 @@
     background-color: $background-neutral;
   }
 }
-
-

@@ -26,7 +26,6 @@
 }
 
 .gallery__item {
-  //width: 158px;
   @media (min-width: $desktop-width) {
     width: 284px;
   }
@@ -45,11 +44,11 @@
 .gallery__title {
   margin-bottom: 10px;
 
-   @media (min-width: $tablet-width) {
-     margin-bottom: 20px;
-   }
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 
-   @media (min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 23px;
   }
 }

@@ -22,7 +22,7 @@
 }
 
 .title::after {
-  content: attr(data-title-duble);
+  content: attr(data-title-duble) / "";
   display: block;
   position: absolute;
   color: $text-color-base;
@@ -40,7 +40,6 @@
     min-width: max-content;
     max-width: 580px;
     bottom: 10px;
-    //top: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,10 +85,6 @@
     padding-top: 45px;
     padding-bottom: 0;
   }
-}
-
-.title--contacts {
-  padding-bottom: 0;
 }
 
 .title--tours {

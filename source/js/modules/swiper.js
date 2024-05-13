@@ -1,24 +1,32 @@
 import 'swiper/css';
 import Swiper from 'swiper';
-import {Navigation, Pagination} from 'swiper/modules';
+import {Navigation, Pagination } from 'swiper/modules';
 //import 'swiper/css/pagination';
 
 export const heroSwiper = new Swiper('.swiper--hero', {
   direction: 'horizontal',
   loop: true,
   modules: [ Pagination ],
+  watchSlidesProgress: true,
 
   pagination: {
     el: '.swiper-pagination',
     clickable:  true,
     bulletElement: 'button',
+    bulletClass: 'swiper-pagination-bullet',
+    type: 'bullets',
+
+    on: {
+      init: function onFocus() {
+        'swiper-pagination-bullet'.setAttribute('tabIndex', 0);
+      }
+    }
   },
 
-  watchSlidesProgress: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
+  // keyboard: {
+  //   enabled: true,
+  //   onlyInViewport: true,
+  // },
 
 });
 
@@ -127,68 +135,6 @@ export const reviewsSwiper = new Swiper('.swiper--reviews', {
   }
 });
 
-
-//const breakpoint = window.matchMedia('(min-width: 1440px)');
-
-// export const advSwiper = new Swiper('.swiper--advantages', {
-//   direction: 'horizontal',
-//   loop: false,
-//   modules: [ Navigation ],
-//   slidesPerView: 'auto',
-//   navigation: {
-//     prevEl: '.swiper-buttons__advantages-prev',
-//     nextEl: '.swiper-buttons__advantages-next',
-//   },
-
-//   on: {
-//     resize: function resizesScreen(swiper) {
-//       let breakpoint = window.innerWidth;
-//       if (breakpoint < 1440) {
-//         swiper.disable();
-//         swiper.destroy(true, true);
-//       } else {
-//         swiper.enable();
-//         swiper.init();
-//       }
-
-//       if (breakpoint >= 1440) {
-
-//         swiper.enable();
-//         swiper.init();
-//       } else {
-//          swiper.disable();
-//         swiper.destroy(true, true);
-//       }
-//     }
-//   }
-// });
-
-// if (window.innerWidth < 1440) {
-//   advSwiper.destroy();
-// }
-
-// function resizesScreen() {
-
-//   if (breakpoint.matches) {
-
-//    let advSwiper = new Swiper('.swiper--advantages', {
-//       direction: 'horizontal',
-//     loop: false,
-//   modules: [ Navigation ],
-//   slidesPerView: 'auto',
-//   navigation: {
-//     prevEl: '.swiper-buttons__advantages-prev',
-//     nextEl: '.swiper-buttons__advantages-next',
-//   },
-
-
-//     });
-//   } else {
-//     Swiper.destroy(true, true);
-//   }
-// }
-// breakpoint.addEventListener('change', resizesScreen)
-
 const swiperListAdv = document.querySelector('.advantages__swiper');
 const sliderListAdv = document.querySelector('.advantages__list');
 const sliderItemsAdv = Array.from(sliderListAdv.querySelectorAll('.advantages__item'));
@@ -197,56 +143,87 @@ const swiperListGallery = document.querySelector('.gallery__swiper');
 const sliderListGallery = document.querySelector('.gallery__list');
 const sliderItemsGallery = Array.from(sliderListGallery.querySelectorAll('.gallery__item'));
 
-const resizableSwiper = (breakpoint, swiperClass, swiperSettings, swiperList, sliderList, sliderItems) => {
+const resizableSwiper = (breakpoint, swiperClass, swiperSettings, swiperList, sliderList, sliderItems, addsSlides, deletesSlides) => {
   let swiper;
-
   breakpoint = window.matchMedia(breakpoint);
-
   const enableSwiper = function (className, settings) {
     swiper = new Swiper(className, settings);
   };
-
   const checker = function() {
     swiperList.classList.remove('swiper');
     sliderList.classList.remove('swiper-wrapper');
+    if (deletesSlides) {
+      deletesSlides(sliderList);
+    }
     sliderItems.forEach((item) => {
+
       item.classList.remove('swiper-slide');
     });
-
     if (breakpoint.matches) {
+      sliderItems.forEach((item) => {
+
+        item.classList.add('swiper-slide');
+        if (addsSlides) {
+          addsSlides(sliderList, item);
+        }
+      });
       swiperList.classList.add('swiper');
       sliderList.classList.add('swiper-wrapper');
-      sliderItems.forEach((item) => {
-        item.classList.add('swiper-slide');
-      })
-
       return enableSwiper(swiperClass, swiperSettings);
     } else {
       if (swiper !== undefined) {
+        if (deletesSlides) {
+          deletesSlides(sliderList);
+        }
+
         swiper.destroy(true,true);
         swiper.disable();
       }
-      //return;
     }
+    //return;
   };
+
 
   breakpoint.addEventListener('change', checker);
   checker();
 };
 
 
-resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
-  direction: 'horizontal',
 
-  //slidesPerGroup: 2,
-  //loopAdditionalSlides: 0,
-  //loopAddBlankSlides: false,
+const addSlides = (list, item) => {
+
+  const clone = item.cloneNode(true);
+  clone.classList.add('slider-clone');
+  list.appendChild(clone);
+};
+
+
+const deleteSlides = (list) => {
+  const clones = Array.from(list.querySelectorAll('.slider-clone'));
+  clones.forEach((item) => item.parentNode.removeChild(item));
+};
+
+
+resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
   loop: true,
-  modules: [ Navigation ],
+  direction: 'horizontal',
   slidesPerView: 'auto',
-  //watchSlidesProgress: true,
+  spaceBetween: 0,
+  //width: 1220,
+
+  // loopAddBlankSlides: false,
+  // loopAdditionalSlides: 0,
+  // observer: true,
+  // observeParents: true,
   //centeredSlides: true,
-  //initialSlide: 2,
+  //slidesPerView: 3,
+  //initialSlide: 1,
+  //slidesPerGroup: 2,
+  //allowSlidePrev: true,
+      //allowSlideNext: true,
+
+
+  modules: [ Navigation ],
   navigation: {
     prevEl: '.swiper-buttons__advantages-prev',
     nextEl: '.swiper-buttons__advantages-next',
@@ -254,7 +231,9 @@ resizableSwiper('(min-width: 1440px)', '.swiper--advantages', {
 },
 swiperListAdv,
 sliderListAdv,
-sliderItemsAdv
+sliderItemsAdv,
+//addSlides,
+//deleteSlides
 );
 
 resizableSwiper('(max-width: 1439px)', '.swiper--gallery', {

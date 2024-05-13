@@ -2,7 +2,6 @@
   display: none;
 
   @media (min-width: $tablet-width) {
-    display: block;
     display: flex;
     gap: 4px;
     align-items: flex-end;

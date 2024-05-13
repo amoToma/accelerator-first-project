@@ -12,7 +12,6 @@
 }
 
 .tours-card__info-container {
-
   display: flex;
   flex-direction: column;
   min-height: 356px;
@@ -35,7 +34,6 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  //gap: 8px;
 }
 
 .tours-card__title {
@@ -78,7 +76,6 @@
     background-repeat: no-repeat;
     background-position: left 12px center;
     padding: 8px 12px 8px 34px;
-
   }
 
   &--days {
@@ -132,7 +129,6 @@
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
-  //text-align: end;
 }
 
 .tours-card__photo {
@@ -154,14 +150,12 @@
     width: 380px;
     height: 416px;
   }
-
 }
 
 .tours-card__day-container {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  //justify-content: space-between;
 }
 
 .tours-card__stars::after {
